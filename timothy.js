@@ -19,7 +19,12 @@ request(url, (err, headers, body) => {
 
   // Nu lopen over de data en de id & description (vraag) printen.
   for (var i = 0; i < json.length; i++) {
-    console.log(json[i].id, json[i].description)
-  }
+    console.log(json[i].id, json[i].description, json[i].choices)
+
+    const fs = require('fs'); // dees require
+
+    // en dan voor elke lijn dit doen:
+    const line = json[i].id + "\t" + json[i].description + json[i].choices  + "\n"; // die eerste \t staat voor tab, de \n staat voor newline.
+    fs.writeFileSync("data.csv", line)  }
 
 });

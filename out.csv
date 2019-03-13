@@ -1,4 +1,4 @@
-,Surname,Age,Gender
-,Snow,26,M
-,White,33,F
-,Brown,78,F
+id,description,choices
+id,,
+,White,33
+,Brown,78
