@@ -1,12 +1,12 @@
 
 const env = require('./env');
-
+const env = require('./env');
 const express = require('express');
 const path = require('path');
 const ejs = require('ejs');
 const app = express();
 const request = require('request');
-const createCsvWriter = require('csv-writer').createObjectCsvWriter;  
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 var bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
@@ -33,7 +33,7 @@ console.log(json.id)
     ]
   });
 
-  const data = [  
+  const data = [
     {
       name: 'John',
       surname: 'Snow',
@@ -51,9 +51,9 @@ console.log(json.id)
       gender: 'F'
     }
   ];
-  
 
-csvWriter  
+
+csvWriter
 .writeRecords(data)
 .then(()=> console.log('The CSV file was written successfully'));
 });
