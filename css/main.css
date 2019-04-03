@@ -1,0 +1,120 @@
+/* -------------------General Styling ---------------------------*/
+html {
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+  font-size: 17px;
+}
+body { 
+ 
+}
+
+/*--------------------Specific Styling -------------------------*/
+.item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  font-size: 30px;
+  background-color:yellow;
+}
+
+.gameboy {
+  width: 420px;
+  height: 568px;
+  margin:0 auto;
+  margin-top:-20px;
+  background:grey;
+}
+
+.img {
+  margin: 0 auto;
+  margin-top:-40px;
+  width:150px;
+  height:150px;
+  background-color: blueviolet;
+  box-shadow: -7px 7px 0px -1px rgba(0,0,0,0.26);
+}
+
+.title {
+  background-color:yellow;
+  font-weight:700;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  text-align:center;
+  padding:5%;
+}
+
+.question-container {
+  background-color:white;
+  border: solid 5px black;
+  width:280px;
+  height:300px;
+  margin: 0 auto;
+  margin-top:8%;
+  padding:4%;
+}
+
+.question-container p {
+  font-size: 1.6em;
+}
+.question-title {
+  font-weight:700;
+  margin-top:30px;
+  margin-bottom:10px;
+  
+}
+
+.question {
+  line-height: 18px;
+
+}
+
+.title p {
+  font-size: 1.5em;
+}
+
+.answer-container {
+  display: grid;
+  width:90%;
+  margin:0 auto;
+  margin-top:8%;
+  justify-content: center;
+  grid-gap: 10px;
+  grid-template-rows: 1fr;
+}
+
+button {
+  width:300px;
+  height:50px;
+  transition: all .05s ease-in-out;
+  
+}
+
+button p {
+  font-family: 'VT323', monospace;
+  font-size:0.8em;
+}
+
+button:hover {
+  
+  transform: scale(1.01);
+}
+
+.scorediv {
+  display:grid;
+  height:100px;
+  width:100vw;
+  grid-template-columns: 1fr 1fr;
+  gap:60vw;
+}
+.scores {
+  margin:2%;
+  padding:2%;
+  display:grid;
+  border-radius: 3px;
+  font-size: 15px;
+  background-color:yellow;
+}
+.score {
+  text-align: right;
+}
