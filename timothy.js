@@ -5,6 +5,7 @@
 // Ik heb ook devDependencies (Linter) gefixed effe (=> instant coding feedback => remember ik ben niet zo'n goede coder...)
 const request = require('request');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+const fs = require('fs'); // dees require
 
 // Opsplitsen in verschillende variabels om je code leesbaar te maken.
 const url = 'https://toggl.com/startup-simulator/cards.import.js';
@@ -18,13 +19,19 @@ request(url, (err, headers, body) => {
   const json = JSON.parse(body.replace('window.cards = ', ''));
 
   // Nu lopen over de data en de id & description (vraag) printen.
+  let text =  "ID\tDESCRIPTION\tVALUATION A\tHAPPINESS A\tTIME A\tVALUATION B\tHAPPINESS B\tTIME B\n"
   for (var i = 0; i < json.length; i++) {
-      console.log(json[i].id, json[i].description, json[i].choices)
+      //console.log(json[i].id, json[i].description, json[i].choices)
 
-      const fs = require('fs'); // dees require
+      
 
       // en dan voor elke lijn dit doen:
-      const line = json[i].id + "\n" + json[i].description + "\n" + json[i].choices.a.values.valuation  + "\n"; // die eerste \t staat voor tab, de \n staat voor newline.
-     fs.writeFileSync("data.csv", line)  }
+      const line = json[i].id + "\t" + json[i].description + "\t" + json[i].choices.a.values.valuation + "\t" + json[i].choices.a.values.happiness + "\t" + json[i].choices.a.values.time + "\t" + json[i].choices.b.values.valuation + "\t" + json[i].choices.b.values.happiness + "\t" + json[i].choices.b.values.time + "\n"; // die eerste \t staat voor tab, de \n staat voor newline.
+     console.log(line);
+     text += line
+    }
+
+    fs.writeFileSync("data.csv", text)
+
 
 });
