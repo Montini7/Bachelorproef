@@ -1,4 +1,4 @@
-/* -------------------General Styling ---------------------------*/
+
 html {
   box-sizing: border-box;
   font-family: 'VT323', monospace;
@@ -7,8 +7,28 @@ html {
 body { 
  
 }
+h1{
+  font-size:2em;
+  padding:5px;
+}
+h2{
+  font-size:1.3em;
+  padding:5px;
+}
+a{
+  padding:5px;
+}
+/* ------------------- Landing Page Styling -------------------------------*/
 
-/*--------------------Specific Styling -------------------------*/
+.container{
+  margin:0 auto;
+  margin-top:300px;
+  width:800px;
+  text-align:center;
+
+}
+
+/*--------------------Specific Styling Calculator -------------------------*/
 .item {
   display: grid;
   justify-content: center;
