@@ -1,0 +1,20 @@
+# Feedback van Timothy (=> https://github.com/Montini7/toggl-test)
+- Please add a .gitignore (want u Node_moduels zo meesturen...)
+- Add env.js to .gitignore & voeg een env-example toe
+- Resources dat je niet meer gebruikt (bv. timothy.js) kan je beter in een "previous" folder ofzo plaatsen
+- no Readme? Serious 🙄
+- Toch niet bij elke start van de Server data gaan ophalen bij Toggl?! Toch gewoon in u codebase zetten?
+
+
+## Now right repo
+- Waarom staat dat niet in een repo?
+- cards.import.js => zou ik gewoon cards.js ofzo noemen (of data.js) + ik zou desnoods dat format aanpassen (=> makkelijker om vragen toe te voegen)
+- iterations, bv. in een callback functie, minstens een niveau'ke naar achter.
+- of consts & lets gebruiken of vars maar dat niet door elkaar gebruiken... => + ik zou met arrow functions werken
+- Ga ook eens met deze HTML file door HTML formatter... gaat een pak cleaner zijn.
+- Ik zou de data van Toggl ook in een subfolder ofzo zetten (of zelfs gewoon effe removen :D)
+- Als je onder de 0 bent, moet je een error krijgen dat je dood bent e...
+- Ik mis nog altijd een beetje een backend?
+- Homepage ofzo erbij?
+
+Overall, als je https://github.com/Montini7/toggl-test & je huidige ZIP file samen zet & met Linter erdoor gaat + die datafile ietsjes opschoont (en dan customer vragen maakt) hebben we een eerste versie e?
