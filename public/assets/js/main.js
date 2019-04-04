@@ -44,7 +44,7 @@
             counter++;
             offsetCounter++;
             } else {
-                    console.log("ur dead");
+                        document.body.className+="userIsDead";
             }
             });
         
@@ -57,7 +57,6 @@
                         document.getElementById("A").innerHTML = window.cards[counter].choices.a.label;
                         document.getElementById("B").innerHTML = window.cards[counter].choices.b.label;
 
-                        
 
                         // De tijdelijke score + de score behaald door het antwoorden van optie B   
                         temporaryScoreVal += window.cards[offsetCounter].choices.b.values.valuation;
@@ -68,7 +67,7 @@
                         counter++;
                         offsetCounter++;
                 } else {
-                        console.log("ur dead");
+                        document.body.className+="userIsDead";
                 }
                 });
 

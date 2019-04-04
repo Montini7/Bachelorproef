@@ -138,3 +138,9 @@ button:hover {
 .score {
   text-align: right;
 }
+.img-desc{
+display: none;
+}
+.userIsDead .img-desc{
+  display:block;
+}
