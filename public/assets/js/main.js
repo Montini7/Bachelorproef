@@ -2,7 +2,7 @@
             const button1 = document.getElementById("button1");
             const button2 = document.getElementById("button2");
 
-            // Counter begint bij 1, aangezien de eerste vraag direct al wordt ingeladen.
+            // Counter begint bij 1, aangezien de eerste vraag direct wordt ingeladen.
             let counter = 1;
 
             // Zodat de punten telling begint bij de punten van de eerste vraag
