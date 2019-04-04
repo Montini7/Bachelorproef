@@ -28,7 +28,7 @@
             button1.addEventListener("click", function(){
              
              // Checken of je score boven de 0 is.
-             if(temporaryScoreHap>=0 || temporaryScoreVal >=0){
+             if(temporaryScoreHap>=0 && temporaryScoreVal >=0){
 
             // De ...e vraag en antwoorden worden ingeladen (... = counter)
             document.getElementById("question").innerHTML = window.cards[counter].description;
@@ -51,7 +51,7 @@
             // Hier begint de functie die wordt uitgevoerd alsje op antwoord-knop B drukt.
             button2.addEventListener("click", function(){
            // Checken of je score boven de 0 is.
-                if(temporaryScoreHap>=0 || temporaryScoreVal >=0){
+                if(temporaryScoreHap>=0 && temporaryScoreVal >=0){
 
                         document.getElementById("question").innerHTML = window.cards[counter].description;
                         document.getElementById("A").innerHTML = window.cards[counter].choices.a.label;
