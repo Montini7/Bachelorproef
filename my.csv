@@ -1,0 +1,4 @@
+id,description,character,choices/a/label,choices/b/label,choices/c/label
+"1,""1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quis similique molestiae distinctio impedit rerum quo blanditiis, ut minus, neque facilis excepturi cupiditate nihil consequatur dicta, quidem tenetur?"",""victor-frontend, tanya-frontend"",Optie 1,Optie 2,Optie 3"
+"2,Een werknemer in je startup meld zich voor de eerste keer ziek dit jaar. Wat doe je?,""victor-frontend, tanya-frontend"",De werknemer veel beterschap en een spoedig herstel wensen.,Een privé detective inhuren en kijken of hij liegt over zijn gezondheid.,De werknemer ontslagen."
+"3,Welk kies je? A. 1 miljoen euro voor 100% van de aandelen van je bedrijf. B. $200.000 voor 5% van de aandelen van je bedrijf?,""victor-frontend, tanya-frontend"",A,B,"
