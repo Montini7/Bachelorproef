@@ -25,22 +25,22 @@ window.cards = [
 	// },
 	{
 		"id": 1,
-		"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quis similique molestiae distinctio impedit rerum quo blanditiis, ut minus, neque facilis excepturi cupiditate nihil consequatur dicta, quidem tenetur?",
-		"character": "victor-frontend, tanya-frontend",
+		"description": "Een van je klanten heeft een openstaande factuur niet binnen de termijn betaald.",
+		"character": "PR1",
 		"choices": {
 			"a": {
-				"label": "Optie 1",
+				"label": "A. Je contacteert de klant met een reminder over de betaling",
 			},
 			"b": {
-				"label": "Optie 2"
+				"label": "B. Je neemt juridische stappen tegen de klant"
 			},
 			"c": {
-				"label": "Optie 3"
+				"label": "C. Je doet niets"
 			}
 
 		},
 		"correctAnswer":{
-			"label": "Optie 1"
+			"label": "Je contacteert de klant met een reminder over de betaling"
 		}
 	},
 	{

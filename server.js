@@ -5,14 +5,12 @@ const path = require('path');
 const ejs = require('ejs');
 const env = require('@env');
 const fs = require('fs');
-const csv = require('fast-csv');
+const app = express();
 
 
+// const csv = require('fast-csv');
 // fast-csv lezen uit CSV bestand 
-      
-
         // var stream = fs.createReadStream("my.csv");
-        
         // var csvStream = csv(dataObject=true)
         // .parse()
         // .on("data", function(data){
@@ -21,24 +19,32 @@ const csv = require('fast-csv');
         // .on("end", function(){
         //      console.log("done");
         // });
-     
         // stream.pipe(csvStream);
 
+var mongo = require('mongodb').MongoClient;
+var url = "mongodb://localhost:27017/mydb";
 
+mongo.connect(url, (err, client) => {
+  if (err) {
+    console.error(err)
+    return
+  }
+  //...
 
+  const db = client.db('kennel')
+  const collection = db.collection('dogs')
 
-const app = express();
+  collection.insertMany([{name: 'Togo'}, {name: 'Syd'}], (err, result) => {
 
+  })
 
-// var MongoClient = require('mongodb').MongoClient;
-// var url = "mongodb://localhost:27017/mydb";
+  collection.find().toArray((err, items) => {
+    console.log(items)
+  })
+  client.close()
+});
 
-// MongoClient.connect(url, function(err, db) {
-//   if (err) throw err;
-//   console.log("Database created!");
-//   db.close();
-// });
-
+// ----------------------------------------------------------------------------------- ENDING MONGODB
 app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
 app.use(express.static(path.join(__dirname, 'public')));
@@ -54,6 +60,14 @@ app.get('/calculator', (req, res) => {
 
 app.get('/contact', (req, res) => {
   res.render('contact');
+});
+
+app.get('/info', (req, res) => {
+  res.render('info');
+});
+
+app.get('/advice', (req, res) => {
+  res.render('advice');
 });
 
 
