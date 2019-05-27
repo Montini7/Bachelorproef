@@ -36,15 +36,15 @@ firstAnswerC.innerHTML = window.cards[0].choices.c.label;
             // Hier begint de functie die wordt uitgevoerd alsje op antwoord-knop A drukt.
             button1.addEventListener("click", function(){
                 // Antwoord controleren op juist of fout -> wegschrijven naar database
-                checkAnswer(this.innerHTML, window.cards[offsetCounter].correctAnswer.label);
-                console.log(this.innerHTML);
+                 checkAnswer(this.innerHTML, window.cards[offsetCounter].correctAnswer.label);
                 offsetCounter++;
-
             // De ...e vraag en antwoorden worden ingeladen (... = counter)
+                        document.getElementById("character").innerHTML = window.cards[counter].character;
                         document.getElementById("question").innerHTML = window.cards[counter].description;
                         document.getElementById("button1").innerHTML = window.cards[counter].choices.a.label;
                         document.getElementById("button2").innerHTML = window.cards[counter].choices.b.label;
                         document.getElementById("button3").innerHTML = window.cards[counter].choices.c.label;
+                        counter++;
             });
 
 
@@ -53,13 +53,14 @@ firstAnswerC.innerHTML = window.cards[0].choices.c.label;
             // Hier begint de functie die wordt uitgevoerd alsje op antwoord-knop B drukt.
             button2.addEventListener("click", function(){
                 // Antwoord controleren op juist of fout -> wegschrijven naar database
-                checkAnswer(this.innerHTML, window.cards[offsetCounter].correctAnswer.label);
+                 checkAnswer(this.innerHTML, window.cards[offsetCounter].correctAnswer.label);
                 offsetCounter++;
-
+                        document.getElementById("character").innerHTML = window.cards[counter].character;
                         document.getElementById("question").innerHTML = window.cards[counter].description;
                         document.getElementById("button1").innerHTML = window.cards[counter].choices.a.label;
                         document.getElementById("button2").innerHTML = window.cards[counter].choices.b.label;
                         document.getElementById("button3").innerHTML = window.cards[counter].choices.c.label;
+                        counter++;
             });
 
 
@@ -68,13 +69,14 @@ firstAnswerC.innerHTML = window.cards[0].choices.c.label;
             // Hier begint de functie die wordt uitgevoerd alsje op antwoord-knop C drukt.
             button3.addEventListener("click", function(){
                 // Antwoord controleren op juist of fout -> wegschrijven naar database
-                checkAnswer(this.innerHTML, window.cards[offsetCounter].correctAnswer.label);
+                 checkAnswer(this.innerHTML, window.cards[offsetCounter].correctAnswer.label);
                 offsetCounter++;
-
+                        document.getElementById("character").innerHTML = window.cards[counter].character;
                         document.getElementById("question").innerHTML = window.cards[counter].description;
                         document.getElementById("button1").innerHTML = window.cards[counter].choices.a.label;
                         document.getElementById("button2").innerHTML = window.cards[counter].choices.b.label;
                         document.getElementById("button3").innerHTML = window.cards[counter].choices.c.label;
+                        counter++;
             });
 
 
