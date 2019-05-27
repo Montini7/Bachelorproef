@@ -294,11 +294,10 @@ input[type="radio"] {
   width: 1em;
   -moz-appearance: none;
   -webkit-appearance: none;
+  margin-right:30px;
 }
 input[type="radio"]:checked {
   background-color: #DF5B49;
-  -webkit-transition: background .15s, box-shadow .1s; 
-  transition: background .15s, box-shadow .1s; 
 }
 
 /*-------------------------------------------------------------------------------------------INFO*/

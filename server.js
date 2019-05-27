@@ -34,9 +34,6 @@ mongo.connect(url, (err, client) => {
   const db = client.db('kennel')
   const collection = db.collection('dogs')
 
-  collection.insertMany([{name: 'Togo'}, {name: 'Syd'}], (err, result) => {
-
-  })
 
   collection.find().toArray((err, items) => {
     console.log(items)

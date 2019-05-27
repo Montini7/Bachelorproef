@@ -2,7 +2,9 @@
 Bachelorproef, in functie van AP hogeschool, Antwerpen. Voor de richting: Grafisch en Digitale Media - Crossmedia Ontwerp
 
 ## Uitleg
-Een project met een calculator die je ondernemingscapaciteiten toetst aan de hand van vooraf opgestelde vragen.
+Een spel dat je ondernemerscapaciteiten test aan de hand van een aantal vragen
 
-## Extra 
-gebaseerd op de Unicorn-simulator van Toggl.
+## Technologie
+
+Node.js, HTML, CSS, JS.
+
