@@ -8,40 +8,6 @@ const fs = require('fs');
 const app = express();
 
 
-// const csv = require('fast-csv');
-// fast-csv lezen uit CSV bestand 
-        // var stream = fs.createReadStream("my.csv");
-        // var csvStream = csv(dataObject=true)
-        // .parse()
-        // .on("data", function(data){
-        //      console.log(data);
-        // })
-        // .on("end", function(){
-        //      console.log("done");
-        // });
-        // stream.pipe(csvStream);
-
-var mongo = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/mydb";
-
-mongo.connect(url, (err, client) => {
-  if (err) {
-    console.error(err)
-    return
-  }
-  //...
-
-  const db = client.db('kennel')
-  const collection = db.collection('dogs')
-
-
-  collection.find().toArray((err, items) => {
-    console.log(items)
-  })
-  client.close()
-});
-
-// ----------------------------------------------------------------------------------- ENDING MONGODB
 app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
 app.use(express.static(path.join(__dirname, 'public')));
