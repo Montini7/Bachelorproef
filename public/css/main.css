@@ -212,11 +212,11 @@ padding:8px;
   background-color:lightsalmon;
 }
 
-.personage{
-  width:25%;
+#personage{
+  width:100%;
   position: relative;
   margin-left: 40px;
-  margin-top:20px;
+  margin-top:50px;
 }
 
 .gameboy {

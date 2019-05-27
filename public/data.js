@@ -3,6 +3,7 @@ window.cards = [
 		"id": 1,
 		"description": "Vraag 1/7:<br> Lucas is een bekende freelance logo-designer en stelt voor om jullie eerste logo te ontwerpen voor 20.000 euro. ",
 		"character": "Lucas <br> De Designer",
+		"image": "<img src='assets/img/designer.png'>",
 		"choices": {
 			"a": {
 				"label": "A. In de begin fase van je onderneming lijkt het je niet slim om 20.000 euro aan een logo te spenderen.",
@@ -23,6 +24,7 @@ window.cards = [
 		"id": 2,
 		"description": "Vraag 2/7:<br>Tymo zegt dat hij de deadline voor het project niet gaat halen.",
 		"character": "Tymo <br> De Developer",
+		"image": "<img src='assets/img/developer.png'>",
 		"choices": {
 			"a": {
 				"label": "A. Je zoekt een oplossing voor dit probleem en hoort bij de rest van het team of iemand kan helpen met Tymo zijn werk.",
@@ -42,6 +44,7 @@ window.cards = [
 		"id": 3,
 		"description": "Vraag 3/7:<br>Luc wil voor zijn investering een meerderheid in de raad van bestuur.",
 		"character": "Luc <br> De Investeerder",
+		"image": "<img src='assets/img/investeerder.png'>",
 		"choices": {
 			"a": {
 				"label": "A. Je geeft Luc de meerderheid, je hebt immers zijn geld nodig.",
@@ -60,6 +63,7 @@ window.cards = [
 		"id": 4,
 		"description": "Vraag 4/7:<br>Twee van je werknemers willen gelijktijdig vakantie nemen. Je bedrijf kan niet functioneren zonder minstens één van deze twee werknemers.",
 		"character": "Ann <br> Human Resources",
+		"image": "<img src='assets/img/hr.png'>",
 		"choices": {
 			"a": {
 				"label": "A. Je laat ze allebei op vakantie vertrekken en je sluit je bedrijf voor deze periode.",
@@ -79,6 +83,7 @@ window.cards = [
 		"id": 5,
 		"description": "Vraag 5/7:<br>Een klant vraagt voor een refund 1 dag later dan de refund-policy van je bedrijf.",
 		"character": "Nathalie<br> Customer Support",
+		"image": "<img src='assets/img/cs.png'>",
 		"choices": {
 			"a": {
 				"label": "A. Je geeft hem geen refund, te laat is te laat.",
@@ -98,6 +103,7 @@ window.cards = [
 		"id": 6,
 		"description": "Vraag 6/7:<br>Een klant post over een negatieve ervaring met jouw bedrijf op sociale media.",
 		"character": "Nathalie<br> Customer Support",
+		"image": "<img src='assets/img/cs.png'>",
 		"choices": {
 			"a": {
 				"label": "Je negeert het.",
@@ -117,6 +123,7 @@ window.cards = [
 		"id": 7,
 		"description": "Vraag 7/7:<br>Een van je klanten heeft een openstaande factuur niet binnen de termijn betaald.",
 		"character": "Lies <br> Boekhouding",
+		"image": "<img src='assets/img/cs.png'>",
 		"choices": {
 			"a": {
 				"label": "Je contacteert de klant met een reminder over de betaling",
