@@ -47,9 +47,7 @@ let question = document.getElementById("question");
         answers.push(answer);
         
         set('answers', JSON.stringify(answers));
-        console.log(answers);
 
-        console.log(get('answers'));
     }
 // deze functie definieert het veranderen van een vraag.
     function setQuestion(counterId){

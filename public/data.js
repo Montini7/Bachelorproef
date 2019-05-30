@@ -123,7 +123,7 @@ window.cards = [
 		"id": 7,
 		"description": "Vraag 7/7:<br>Een van je klanten heeft een openstaande factuur niet binnen de termijn betaald.",
 		"character": "Lies <br> Boekhouding",
-		"image": "<img src='assets/img/cs.png'>",
+		"image": "<img src='assets/img/bh.png'>",
 		"choices": {
 			"a": {
 				"label": "Je contacteert de klant met een reminder over de betaling",
