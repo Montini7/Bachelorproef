@@ -1,8 +1,14 @@
 
 // Variabele maken voor de antwoord-buttons
-const button1 = document.getElementById("button1");
-const button2 = document.getElementById("button2");
+const buttonNext = document.getElementById("buttonNext");
+const buttonPrev = document.getElementById("buttonPrev");
+let answer1 = document.getElementById("answer1");
+let answer2 = document.getElementById("answer2");
+let answer3 = document.getElementById("answer3");
 
+let radio1 = document.getElementById('radio1');
+let radio2 = document.getElementById('radio2');
+let radio3 = document.getElementById('radio3');
 // Counter begint bij 1, aangezien de eerste vraag direct wordt ingeladen.
 let counter = 1;
 
@@ -10,15 +16,12 @@ let counter = 1;
 let offsetCounter = 0;
 
 // Eerste vraag standaard inladen
-let firstQuestion = document.getElementById("question");
-let firstAnswerA = document.getElementById("button1");
-let firstAnswerB = document.getElementById("button2");
-let firstAnswerC = document.getElementById("button3");
+let question = document.getElementById("question");
 
-firstQuestion.innerHTML = window.cards[0].description;
-firstAnswerA.innerHTML = window.cards[0].choices.a.label;
-firstAnswerB.innerHTML = window.cards[0].choices.b.label;
-firstAnswerC.innerHTML = window.cards[0].choices.c.label;
+question.innerHTML = window.cards[0].description;
+answer1.innerHTML = window.cards[0].choices.a.label;
+answer2.innerHTML = window.cards[0].choices.b.label;
+answer3.innerHTML = window.cards[0].choices.c.label;
             
     function checkAnswer(answer, correctAnswer) {
         if(answer == correctAnswer){
@@ -32,55 +35,74 @@ firstAnswerC.innerHTML = window.cards[0].choices.c.label;
 
 
 
-// -----------------------------------------------------------------------------------------------------------------KNOP1
-            // Hier begint de functie die wordt uitgevoerd alsje op antwoord-knop A drukt.
-            button1.addEventListener("click", function(){
-                // Antwoord controleren op juist of fout -> wegschrijven naar database
-                 checkAnswer(this.innerHTML, window.cards[offsetCounter].correctAnswer.label);
-                offsetCounter++;
+        function nextQuestion(){
+            // Antwoord controleren op juist of fout -> wegschrijven naar database
+            //checkAnswer(this.innerHTML, window.cards[offsetCounter].correctAnswer.label);
+            //offsetCounter++;
             // De ...e vraag en antwoorden worden ingeladen (... = counter)
-                        document.getElementById("character").innerHTML = window.cards[counter].character;
-                        document.getElementById("personage").innerHTML = window.cards[counter].image;
-                        document.getElementById("question").innerHTML = window.cards[counter].description;
-                        document.getElementById("button1").innerHTML = window.cards[counter].choices.a.label;
-                        document.getElementById("button2").innerHTML = window.cards[counter].choices.b.label;
-                        document.getElementById("button3").innerHTML = window.cards[counter].choices.c.label;
-                        counter++;
+            document.getElementById("character").innerHTML = window.cards[counter].character;
+            document.getElementById("personage").innerHTML = window.cards[counter].image;
+            question.innerHTML = window.cards[counter].description;
+            answer1.textContent = window.cards[counter].choices.a.label;
+            answer2.textContent = window.cards[counter].choices.b.label;
+            answer3.textContent = window.cards[counter].choices.c.label;
+            radio1.checked = false;
+            radio2.checked = false;
+            radio3.checked = false;
+            counter+= 1;
+            if (counter == 1){
+                buttonPrev.classList.add('notvis');
+
+            } else{
+                buttonPrev.classList.remove('notvis');
+            }
+        }
+        function prevQuestion(){
+            if(counter > 0){
+                counter -= 1;
+            }
+            
+            document.getElementById("character").innerHTML = window.cards[counter].character;
+            document.getElementById("personage").innerHTML = window.cards[counter].image;
+            question.innerHTML = window.cards[counter].description;
+            answer1.textContent = window.cards[counter].choices.a.label;
+            answer2.textContent = window.cards[counter].choices.b.label;
+            answer3.textContent = window.cards[counter].choices.c.label;
+            if (counter == 1){
+                buttonPrev.classList.add('notvis');
+
+            } else{
+                buttonPrev.classList.remove('notvis');
+            }
+        }
+            
+
+// -----------------------------------------------------------------------------------------------------------------KNOP1
+            // Wanneer je op 'VOLGENDE' klikt schrijf je het antwoord weg -> verandert image, personage, vraag en antwoorden.
+            buttonNext.addEventListener("click", function(){
+                nextQuestion();
+            });
+
+            buttonPrev.addEventListener("click", function(){
+                prevQuestion();
             });
 
 
 
 // -----------------------------------------------------------------------------------------------------------------KNOP2      
             // Hier begint de functie die wordt uitgevoerd alsje op antwoord-knop B drukt.
-            button2.addEventListener("click", function(){
-                // Antwoord controleren op juist of fout -> wegschrijven naar database
-                 checkAnswer(this.innerHTML, window.cards[offsetCounter].correctAnswer.label);
-                offsetCounter++;
-                        document.getElementById("character").innerHTML = window.cards[counter].character;
-                        document.getElementById("personage").innerHTML = window.cards[counter].image;
-                        document.getElementById("question").innerHTML = window.cards[counter].description;
-                        document.getElementById("button1").innerHTML = window.cards[counter].choices.a.label;
-                        document.getElementById("button2").innerHTML = window.cards[counter].choices.b.label;
-                        document.getElementById("button3").innerHTML = window.cards[counter].choices.c.label;
-                        counter++;
-            });
-
-
-
-// -----------------------------------------------------------------------------------------------------------------KNOP3
-            // Hier begint de functie die wordt uitgevoerd alsje op antwoord-knop C drukt.
-            button3.addEventListener("click", function(){
-                // Antwoord controleren op juist of fout -> wegschrijven naar database
-                 checkAnswer(this.innerHTML, window.cards[offsetCounter].correctAnswer.label);
-                offsetCounter++;
-                        document.getElementById("character").innerHTML = window.cards[counter].character;
-                        document.getElementById("personage").innerHTML = window.cards[counter].image;
-                        document.getElementById("question").innerHTML = window.cards[counter].description;
-                        document.getElementById("button1").innerHTML = window.cards[counter].choices.a.label;
-                        document.getElementById("button2").innerHTML = window.cards[counter].choices.b.label;
-                        document.getElementById("button3").innerHTML = window.cards[counter].choices.c.label;
-                        counter++;
-            });
+            // buttonPrev.addEventListener("click", function(){
+            //     // Antwoord controleren op juist of fout -> wegschrijven naar database
+            //      checkAnswer(this.innerHTML, window.cards[offsetCounter].correctAnswer.label);
+            //     offsetCounter++;
+            //             document.getElementById("character").innerHTML = window.cards[counter].character;
+            //             document.getElementById("personage").innerHTML = window.cards[counter].image;
+            //             document.getElementById("question").innerHTML = window.cards[counter].description;
+            //             document.getElementById("button1").innerHTML = window.cards[counter].choices.a.label;
+            //             document.getElementById("button2").innerHTML = window.cards[counter].choices.b.label;
+            //             document.getElementById("button3").innerHTML = window.cards[counter].choices.c.label;
+            //             counter++;
+            // });
 
 
             

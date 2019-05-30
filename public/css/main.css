@@ -52,15 +52,12 @@ strong{
   position: absolute;
   margin:2%;
 }
+
+.notvis{
+  display:none;
+}
 /* ------------------- Landing Page Styling -------------------------------*/
-/* #background{
-background-image: url('bg/bg1.jpg');
-background-repeat: no-repeat;
- background-size:100%;
-width:100vw;
-height:100%;
-position: absolute;
-} */
+
 
 #logo{
   margin:0 auto;
@@ -143,50 +140,8 @@ z-index:100;
 .button:hover {
 transform: scale(1.03);
 }
-
-/* ------------------- Background animation ------------------------------*/
-
-/* .bottom-layer{
-background-image: url('bg/shape2.png');
-width:100%;
-position: absolute;
-bottom: 0%;
-z-index:1;
-animation-name: floating;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-}
-.top-layer{
-  background-image: url('bg/shape3.png');
-  width:100%;
-  position: absolute;
-  bottom: 0%;
-  z-index:1;
-  /* animation-name: floating2;
-  animation-duration: 10s;
-  animation-direction: alternate-reverse; */
-  }
-
-  /* @keyframes floating {
-    0%   {bottom:0%;}
-    25%  {bottom:0.80%;}
-    50%  {bottom:0%;}
-    100% {bottom:0.80%;}
-  }
-  @keyframes floating2 {
-    0%   {bottom:0%;}
-    25%  {bottom:0.40%;}
-    50%  {bottom:0%;}
-    100% {bottom:0.40%;}
-  } */
-
 /*--------------------Specific Styling Calculator -------------------------*/
 
-#button1:hover{
-  border:2px solid black;
-  
-}
 form{
   font-size:0.9em;
 }
@@ -211,7 +166,54 @@ padding:8px;
   font-size:0.8em;
   background-color:lightsalmon;
 }
-
+#buttonPrev{
+  width:160px;
+  height:45px;
+  border-radius: 30px;
+  margin:0 auto;
+  margin-left:50px;
+  margin-top:50px;
+  padding: 10px 25px;
+  color:white;
+  font-family: 'Bitter', serif;
+  font-weight: bolder;
+  font-size:1em;
+  background: rgba(223,90,73,1);
+  background: -moz-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(223,90,73,1)), color-stop(56%, rgba(227,123,63,1)), color-stop(100%, rgba(241,203,78,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: linear-gradient(135deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df5a49', endColorstr='#f1cb4e', GradientType=1 ); 
+  border:0 none;
+  cursor:pointer;
+  transition: all .05s ease-in-out;
+}
+#buttonNext{
+  width:160px;
+  height:45px;
+  border-radius: 30px;
+  margin:0 auto;
+  margin-left:50px;
+  margin-top:50px;
+  padding: 10px 25px;
+  color:white;
+  font-family: 'Bitter', serif;
+  font-weight: bolder;
+  font-size:1em;
+  background: rgba(223,90,73,1);
+  background: -moz-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(223,90,73,1)), color-stop(56%, rgba(227,123,63,1)), color-stop(100%, rgba(241,203,78,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: linear-gradient(135deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df5a49', endColorstr='#f1cb4e', GradientType=1 ); 
+  border:0 none;
+  cursor:pointer;
+  transition: all .05s ease-in-out;
+}
 #personage{
   width:100%;
   position: relative;
@@ -220,6 +222,7 @@ padding:8px;
 }
 
 .gameboy {
+  background-image:url('bg/shape1.png');
   border-radius:5px;
   display:grid;
   grid-gap:5px;
