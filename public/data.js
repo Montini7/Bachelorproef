@@ -16,9 +16,7 @@ window.cards = [
 			}
 
 		},
-		"correctAnswer":{
-			"label": "a"
-		}
+		"correctAnswer": "a"
 	},
 	{
 		"id": 2,
@@ -36,9 +34,7 @@ window.cards = [
 				"label": "Je belt naar de klant om de deadline uit te stellen."
 			}
 		},
-		"correctAnswer":{
-			"label": "a"
-		}
+		"correctAnswer": "a"
 	},
 	{
 		"id": 3,
@@ -56,9 +52,7 @@ window.cards = [
 				"label": "Je vertelt hem dat je zijn geld niet nodig hebt en dat hij de deal op zijn buik mag schrijven."	
 			},
 		},
-		"correctAnswer":{
-				"label": "b"
-			}
+		"correctAnswer": "b"
 		},{
 		"id": 4,
 		"description": "Vraag 4/6:<br>Twee van je werknemers willen gelijktijdig vakantie nemen. Je bedrijf kan niet functioneren zonder minstens één van deze twee werknemers.",
@@ -76,9 +70,7 @@ window.cards = [
 			}
 
 		},
-		"correctAnswer":{
-			"label": "c"
-		}
+		"correctAnswer": "c"
 	},{
 		"id": 5,
 		"description": "Vraag 5/6:<br>Een klant vraagt voor een refund 1 dag later dan de refund-policy van je bedrijf.",
@@ -96,9 +88,7 @@ window.cards = [
 			}
 
 		},
-		"correctAnswer":{
-			"label": "c"
-		}
+		"correctAnswer": "c"
 	},{
 		"id": 6,
 		"description": "Vraag 6/6:<br>Een van je klanten heeft een openstaande factuur niet binnen de termijn betaald.",
@@ -116,8 +106,6 @@ window.cards = [
 			}
 
 		},
-		"correctAnswer":{
-			"label": "a"
-		}
+		"correctAnswer": "a"
 	}
 ]

@@ -18,7 +18,7 @@ var answers = [];
 
 
 
-// Locale storage functie
+// Locale storage functions
 const get = (f) => {
     return localStorage.getItem(f);
     return false;
@@ -30,6 +30,22 @@ const set = (f, v) => {
     return true;
 };
 
+// function for score calculation = TODO: naar een functie zetten
+var correct = 0;
+function giveAdvice(answer, correctAnswer, answers) {
+    for (let i = 0; i < window.cards.length; i++) {
+        var card = window.cards[i];
+        var correctAnswer = card.correctAnswer;
+        var userAnswer = get('q'+i) || false;
+        if(correctAnswer == userAnswer) {
+            console.log('You answered question ' + i + ' correct = ' + correctAnswer)
+            correct+=1;
+        } else {
+            console.log('You answered question ' + i + ' wrong, correct answer was ' + correctAnswer)
+        }  
+    }
+}
+console.log('Score: ' + correct + '/'+window.cards.length)
 
 
 // Deze counter wordt gebruikt om de zoveelste vraag in te laden.
@@ -45,17 +61,23 @@ let question = document.getElementById("question");
         if(answer == correctAnswer){
             // Markeer de vraag als juist beantwoordt
             console.log('juist');
-        }else{
+        } else {
             // Markeer de vraag als fout beantwoordt
             console.log('fout');
         }
 
-        answers.push(answer);
-        set('answers', JSON.stringify(answers));
-
     }
 // deze functie definieert het veranderen van een vraag.
     function setQuestion(counterId){
+
+        var previousAnswered = get('q'+counterId) || false;
+        if(previousAnswered){
+            console.log('previous answer: ', previousAnswered)
+            document.querySelector('input[value="'+previousAnswered+'"]').checked = true;
+        } else {
+            console.log('First time question')
+        }
+
 
         document.getElementById("character").innerHTML = window.cards[counterId].character;
         document.getElementById("personage").innerHTML = window.cards[counterId].image;
@@ -94,42 +116,32 @@ let question = document.getElementById("question");
            setQuestion(counter);
            
         }
-            
 
+
+
+          function storeAnswer(id, answerLabel) {
+            // store the answers in localstorage
+            set('q'+id, answerLabel);
+        }
 // -----------------------------------------------------------------------------------------------------------------KNOP1
             // Wanneer je op 'VOLGENDE' klikt schrijf je het antwoord weg -> verandert image, personage, vraag en antwoorden.
             buttonNext.addEventListener("click", function(){
-                if (radio1.checked){
-                    storeAnswer(counter, radio1.value);
-                    nextQuestion();
-                }
-                if(radio2.checked) {
-                    storeAnswer(counter, radio2.value);
-                    nextQuestion();
-                }
-                if(radio3.checked) {
-                    storeAnswer(counter, radio3.value);
-                    nextQuestion();
-                }
-                switch (answers[counter]) {
-                    case "a":
-                        radio1.setAttribute("checked", "checked");
-                        break;
 
-                    case "b":
-                        radio2.setAttribute("checked", "checked");
-                        break;
+                var value = ""
+                var options = document.querySelectorAll('input[type="radio"]');
+                for (let i = 0; i < options.length; i+=1) {
+                    // Find the right answer
+                    if(options[i].checked){
+                        value = options[i].value;
+                    }
 
-                    case "c":
-                        radio3.setAttribute("checked", "checked");
-                        break;   
-
-                    default:
-                            radio1.setAttribute("checked", "false");
-                            radio2.setAttribute("checked", "false");
-                            radio3.setAttribute("checked", "false");
-                        break;
+                    // Reset all answers
+                    options[i].checked = false;
                 }
+
+                console.log('Value: ', value)
+                storeAnswer(counter, value);
+                nextQuestion();
             });
 
          
@@ -138,39 +150,8 @@ let question = document.getElementById("question");
             // Wanneer je op 'VORIGE' klikt -> verandert image, personage, vraag en antwoorden naar de vorige vraag.
             buttonPrev.addEventListener("click", function(){
                     prevQuestion();
-                    switch (answers[counter]) {
-                        case "a":
-                            radio1.setAttribute("checked", "checked");
-                            break;
-
-                        case "b":
-                            radio2.setAttribute("checked", "checked");
-                            break;
-
-                        case "c":
-                            radio3.setAttribute("checked", "checked");
-                            break;   
-
-                        default:
-                                radio1.setAttribute("checked", "false");
-                                radio2.setAttribute("checked", "false");
-                                radio3.setAttribute("checked", "false");
-                            break;
-                    }
+                
             });
 
             setQuestion(0);
             // Functie om het gegeven antwoord op te slagen om later te tonen welke antwoorden de gebruiker 'juist'/'fout' had.
-            function storeAnswer(id, answerLabel) {
-                // store answerLabel in certain place within answers array
-                answers[id] = answerLabel;
-                
-                if(answers[id] == window.cards[counter].correctAnswer.label){
-                    answerScore++;
-                }
-                console.log("je score is: " + answerScore +"/7");
-            }
-
-            
-            
-            
