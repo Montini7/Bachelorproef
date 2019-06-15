@@ -2,16 +2,17 @@
 <div class="scorediv">
 </div>
         <div class="gameboy">
+                
 
 
                         <div class="grid-item">
                                         <a href="/"><i class="fas fa-chevron-left"></i> Back</a>
                                 <h1 id="character">Lucas <br> De Designer</h1>
-                                <p id="question"> TEST</p>
+                                <p id="question">TEST</p>
 
                                         <form id="test" action="">
                                                 <div class="answers">
-                                                        <input class="radioBtn" id="radio1" type="radio" name="answer" value="a"><span id="answer1">A. In de begin fase van je onderneming lijkt het je niet slim om 20.000 euro aan een logo te spenderen.</span><br>
+                                                        <input class="radioBtn" id="radio1" type="radio" name="answer" value="a"><span id="answer1"><label for="radio1"> In de begin fase van je onderneming lijkt het je niet slim om 20.000 euro aan een logo te spenderen.</label></span><br>
                                                 </div>
                                                 <div class="answers">
                                                         <input class="radioBtn" id="radio2" type="radio" name="answer" value="b"><span id="answer2">B. Je bent fan van Lucas zijn portfolio dus je spendeert 20.000 euro aan een nieuw logo.</span><br>
@@ -24,12 +25,16 @@
                                                 
                                                 <button class="notvis" id="buttonPrev">Vorige</button>
                                                 <button id="buttonNext">Volgende</button>
+                                                <a href="/advice" class="notvis" id="buttonEnd">Beëindigen</a>
                                         </div>
                         </div>
                         <div id="personage" class="grid-item">
                                  <img src="assets/img/designer.png">
                         </div>
+                        <div class="advice"></div>
                 </div>
+        </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>        
 <script src="data.js"></script>
 <script src="../assets/js/main.js"></script>
 <% include master/footer.html %>

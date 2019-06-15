@@ -214,6 +214,29 @@ padding-top:2%;
   cursor:pointer;
   transition: all .05s ease-in-out;
 }
+#buttonEnd{
+  width:120px;
+  height:35px;
+  border-radius: 30px;
+  margin:0 auto;
+  margin-left:20px;
+  padding: 12px 30px;
+  color:white;
+  font-family: 'Bitter', serif;
+  font-weight: bolder;
+  font-size:0.8em;
+  background: rgba(223,90,73,1);
+  background: -moz-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(223,90,73,1)), color-stop(56%, rgba(227,123,63,1)), color-stop(100%, rgba(241,203,78,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  background: linear-gradient(135deg, rgba(223,90,73,1) 0%, rgba(227,123,63,1) 56%, rgba(241,203,78,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df5a49', endColorstr='#f1cb4e', GradientType=1 ); 
+  border:0 none;
+  cursor:pointer;
+  transition: all .05s ease-in-out;
+}
 #personage{
   width:100%;
   position: relative;
@@ -255,6 +278,25 @@ z-index:20;
 #question{
   font-family: 'Roboto', sans-serif;
   padding-bottom: 5%;
+}
+
+
+
+/*-------------------------------------------- ADVICE*/
+
+.gameboy-advice{
+  border-radius:5px;
+  width: 920px;
+  height: 560px;
+  margin:0 auto;
+  margin-top:120px;
+  box-shadow: -2px 2px 30px 4px rgba(0,0,0,0.03); 
+  background-color:white;
+  z-index:100;
+}
+
+#response{
+    columns: 2;
 }
 /* ------------------------------------------ GRID */
 

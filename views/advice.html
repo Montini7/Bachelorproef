@@ -1,9 +1,5 @@
 <% include master/header.html %>
-<!-- <div id="background"> -->
-    <div class="scorediv">
-        <!-- <div class="scores">logo</div>               -->
-    </div>
-        <div class="gameboy2">
+        <div class="gameboy-advice">
             <div class="nav">
                 <ul>
                     <li><a href="/contact">Contact</a></li>
@@ -12,14 +8,37 @@
                 </ul>
                 
             </div>
-            <div class="grid">
-                    <div class="grid-item">
-                    </div>
-                    <div class="grid-item">
-                          
-                    </div>
+            <div class="advice-grid">
+               
+                            <h1 id="score">Je hebt 6/6</h1>
+                            <br>
+                        <ul id="response">
+                            
+                        </ul>
+
+                    
             </div>
             
 
         </div>
+        <script src="data.js"></script>
+<script>
+    // Locale storage functies declareren.
+const get = (f) => {
+    return localStorage.getItem(f);
+    return false;
+};
+
+    let correct = get('correctAnswers');
+    
+for (let i = 0; i < window.cards.length; i+=1) {
+    document.getElementById('response').innerHTML += '<li>' + window.cards[i].description + '</li><br>';
+}
+
+function giveAdvice(){
+    document.getElementById("score").innerHTML = 'Score: ' + correct + '/'+window.cards.length;
+}
+window.onload = giveAdvice;
+
+</script>
 <% include master/footer.html %>

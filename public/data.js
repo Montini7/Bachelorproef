@@ -12,7 +12,7 @@ window.cards = [
 				"label": "Je bent fan van Lucas zijn portfolio dus je spendeert 20.000 euro aan een nieuw logo."
 			},
 			"c": {
-				"label": "C. Je kopieert een bestaand logo van een ander bedrijf, zo heb je een goed logo zonder er geld aan te spenderen."
+				"label": "Je kopieert een bestaand logo van een ander bedrijf, zo heb je een goed logo zonder er geld aan te spenderen."
 			}
 
 		},
