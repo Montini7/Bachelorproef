@@ -16,8 +16,7 @@ const questionsCount = 5;
 
 // Lege array om de antwoorden in op te slagen.
 let answers = [];
-// Variabele die op 0 staat, hier worden later het aantal correcte antwoorden in opgeslagen.
-let correct = 0;
+
 
 // Eerste vraag standaard inladen
 let question = document.getElementById("question");
@@ -39,7 +38,8 @@ const set = (f, v) => {
 
 // Deze functie dient om de score te berekenen en het advies te geven.
 function setScore() {
-
+    // Variabele die op 0 staat, hier worden later het aantal correcte antwoorden in opgeslagen.
+    let correct = 0;
     for (let i = 0; i < window.cards.length; i++) {
         var card = window.cards[i];
         var correctAnswer = card.correctAnswer;
@@ -145,24 +145,3 @@ setQuestion(0);
 
 
 //------------------------------------ CONTACT FORM
-// $(document).ready(function () {
-//     var user, to, subject, text;
-//     $("#send_email").click(function () {
-//         // enter your email account that you want to recieve emails at.
-//         to = "niccolo.montini@hotmail.com";
-//         name = $("#name").val();
-//         user = $("#user_email").val();
-//         text = $("#textarea1").val();
-//         // $("#message").text("Sending E-mail...Please wait");
-//         $.get("http://localhost:8080/send", {
-//             to: to,
-//             name: name,
-//             user: user,
-//             text: text
-//         }, function (data) {
-//             if (data == "sent") {
-//                 console.log("Email sent");
-//             }
-//         });
-//     });
-// });

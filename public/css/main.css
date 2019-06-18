@@ -298,6 +298,17 @@ z-index:20;
 #response{
     columns: 2;
 }
+.advice-grid{
+  padding:5%;
+}
+.advice-grid li{
+  padding:2%;
+  border-bottom:2px solid grey;
+
+  
+}
+.advice-grid ul{
+}
 /* ------------------------------------------ GRID */
 
 .grid-item{
