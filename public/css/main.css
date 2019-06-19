@@ -56,6 +56,13 @@ strong{
 .notvis{
   display:none;
 }
+
+#disclaimer{
+  font-size:0.6em;
+  margin-left:60px;
+  margin-top:-10px;
+  color:grey;
+}
 /* ------------------- Landing Page Styling -------------------------------*/
 
 
@@ -150,6 +157,7 @@ span{
 form{
   font-size:0.9em;
 }
+
 .answers{
 border-radius:2px;
 box-sizing: border-box;
@@ -158,7 +166,9 @@ padding-top:2%;
 #test input{
  position: absolute;
 }
-
+span{
+  cursor:pointer;
+}
 .item {
   display: grid;
   justify-content: center;

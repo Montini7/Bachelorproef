@@ -2,6 +2,7 @@
 const buttonNext = document.getElementById("buttonNext");
 const buttonPrev = document.getElementById("buttonPrev");
 
+
 let answer1 = document.getElementById("answer1");
 let answer2 = document.getElementById("answer2");
 let answer3 = document.getElementById("answer3");
@@ -34,7 +35,19 @@ const set = (f, v) => {
     localStorage.setItem(f, v);
     return true;
 };
-// Begin van de functies
+// Begin van de functies;
+
+// 3 functies om ervoor te zorgen dat de radio buttons ook actief worden na het drukken op het antwoord. Niet enkel op de radio button zelf.
+answer1.addEventListener("click", function() {
+    document.getElementById("radio1").checked = true;
+});
+answer2.addEventListener("click", function() {
+    document.getElementById("radio2").checked = true;
+});
+answer3.addEventListener("click", function() {
+    document.getElementById("radio3").checked = true;
+});
+
 
 // Deze functie dient om de score te berekenen en het advies te geven.
 function setScore() {
@@ -45,11 +58,11 @@ function setScore() {
         var correctAnswer = card.correctAnswer;
         var userAnswer = get("q" + i) || false;
         if (correctAnswer == userAnswer) {
-             console.log('You answered question ' + i + ' correct = ' + correctAnswer)
+            //  console.log('You answered question ' + i + ' correct = ' + correctAnswer)
             correct += 1;
-        } else {
-             console.log('You answered question ' + i + ' wrong, correct answer was ' + correctAnswer)
-        }
+        }// else {
+        //      console.log('You answered question ' + i + ' wrong, correct answer was ' + correctAnswer)
+        // }
         
     }
     set('correctAnswers',correct);
@@ -144,4 +157,3 @@ setQuestion(0);
 
 
 
-//------------------------------------ CONTACT FORM
