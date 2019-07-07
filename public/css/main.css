@@ -445,7 +445,135 @@ input[type=email], input[type=password], input[type=text], textarea {
 .input{
   position: relative;
 }
+.mobile{
+  display:none;
+}
+
 /* ------------------------------ ----------------------------------------------------RESPONSIVE*/
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  body{
+      background-image: url('bg/bg-iphone.jpg');
+      background-repeat: no-repeat;
+      font-size:0.8em;
+  }
+  .mobile{
+    display:block;
+  }
+  .not-mobile{
+    display:none;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    width:100%;
+  }
+  .grid-item{
+    padding:5%;
+  }
+  h1{
+    font-size:1.2em;
+    padding-bottom:2%;
+    text-align:center;
+    padding-top:100px;
+  }
+  .gameboy{
+    border-radius:5px;
+    width: 75%;
+    height:80vh;
+    margin-top:50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .gameboy-advice{
+    border-radius:5px;
+    width: 75%;
+    height:80vh;
+    margin-top:50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .gameboy2{
+    border-radius:5px;
+    width: 75%;
+    height:80vh;
+    margin-top:50px;
+  }
+  .gameboy3{
+    border-radius:5px;
+    width: 75%;
+    height:80vh;
+    margin-top:50px;
+  }
+  .gameboy4{
+    border-radius:5px;
+    width: 75%;
+    height:80vh;
+    margin-top:50px;
+  }
+  .nav {
+    margin-right:50px;
+    padding-top:35px;
+    font-family: 'Bitter', serif;
+    font-weight: bolder;
+    color:#3B403B;
+    font-size:0.95em;
+    z-index:100;
+  }
+  .nav li{
+    margin-left:35px;
+  }
 
-/* iPhone */
+  .welcome{
+    padding:5%; 
+    width:100%;
+    font-size:0.95em;
+  
+  }
+  .button{
+    width:110px;
+    height:30px;
+    border-radius: 30px;
+    margin:0 auto;
+    margin-top:30px;
+    padding: 9px 25px;
+    font-size:0.7em;
+  }
+  .info {
+    line-height: 20px;
+    text-align: left;
+    margin-left: 20px;
+    font-size:0.8em;
+}
+.klein{
+  width:50%;
+  margin:0 auto;
+}
+#logo{
+  width:70%;
+}
+.buttons{
+margin-left:0;
+}
+#buttonPrev{
+  margin-left:30px;
+  width:80px;
+  height:30px;
+}
+#buttonNext{
+  width:80px;
+  height:30px;
+}
+
+#personage{
+  width:40%;
+  position: relative;
+  margin:0 auto;
+  margin-top:0px;
+}
+}
