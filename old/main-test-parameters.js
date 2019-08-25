@@ -4,26 +4,25 @@ const buttonPrev = document.getElementById("buttonPrev");
 
 let answer1 = document.getElementById("answer1");
 let answer2 = document.getElementById("answer2");
-let answer3 = document.getElementById("answer3");
 
 let radio1 = document.getElementById("radio1");
 let radio2 = document.getElementById("radio2");
-let radio3 = document.getElementById("radio3");
 let inputRadioBtn = document.getElementsByClassName("radioBtn");
 
-let geldwolf = 0;
-let opportunist = 0;
-let wereldverbeteraar = 0;
-let innovator = 0;
-// let val=0;
-// let hap=0;
+let valuatie = 50;
+let happiness = 50;
+let getValScore = document.getElementById('valId');
+let getHapScore = document.getElementById('hapId');
 
-// let valWidth = 0;
-// let hapWidth = 0;
+let val=0;
+let hap=0;
+
+let valWidth = 0;
+let hapWidth = 0;
 
 
 // Aantal vragen
-const questionsCount = 5;
+const questionsCount = 12;
 
 // Lege array om de antwoorden in op te slagen.
 let answers = [];
@@ -46,6 +45,7 @@ const set = (f, v) => {
     return true;
 };
 // Begin van de functies;
+
 // 2 functies om ervoor te zorgen dat de radio buttons ook actief worden na het drukken op het antwoord. Niet enkel op de radio button zelf.
 answer1.addEventListener("click", function() {
     document.getElementById("radio1").checked = true;
@@ -53,39 +53,36 @@ answer1.addEventListener("click", function() {
 answer2.addEventListener("click", function() {
     document.getElementById("radio2").checked = true;
 });
-answer3.addEventListener("click", function() {
-    document.getElementById("radio3").checked = true;
-});
 
 
 // Deze functie dient om de score te berekenen en het advies te geven.
-// function setScore() {
-//     // Variabele die op 0 staat, hier worden later het aantal correcte antwoorden in opgeslagen.
-//     let correct = 0;
-//     for (let i = 0; i < window.cards.length; i++) {
-//         var card = window.cards[i];
-//         var correctAnswer = card.correctAnswer;
-//         var userAnswer = get("q" + i) || false;
-//         if (correctAnswer == userAnswer) {
-//             //  console.log('You answered question ' + i + ' correct = ' + correctAnswer)
-//             correct += 1;
-//         }// else {
-//         //      console.log('You answered question ' + i + ' wrong, correct answer was ' + correctAnswer)
-//         // }
+function setScore() {
+    // Variabele die op 0 staat, hier worden later het aantal correcte antwoorden in opgeslagen.
+    let correct = 0;
+    for (let i = 0; i < window.cards.length; i++) {
+        var card = window.cards[i];
+        var correctAnswer = card.correctAnswer;
+        var userAnswer = get("q" + i) || false;
+        if (correctAnswer == userAnswer) {
+            //  console.log('You answered question ' + i + ' correct = ' + correctAnswer)
+            correct += 1;
+        }// else {
+        //      console.log('You answered question ' + i + ' wrong, correct answer was ' + correctAnswer)
+        // }
         
-//     }
-//     set('correctAnswers',correct);
-// }
+    }
+    set('correctAnswers',correct);
+}
 // console.log('Score: ' + correct + '/'+window.cards.length)
-// function setGameScore(val,hap) {
-//     valWidth = valuatie + val;
-//     hapWidth = happiness + hap;
-//     valuatie= valWidth;
-//     happiness = hapWidth;
+function setGameScore(val,hap) {
+    valWidth = valuatie + val;
+    hapWidth = happiness + hap;
+    valuatie= valWidth;
+    happiness = hapWidth;
 
-//     getValScore.style.width = valWidth + '%';
-//     getHapScore.style.width = hapWidth + '%';
-// }
+    getValScore.style.width = valWidth + '%';
+    getHapScore.style.width = hapWidth + '%';
+}
 
 // deze functie definieert het veranderen van een vraag.
 function setQuestion(counterId) {
@@ -104,19 +101,6 @@ function setQuestion(counterId) {
     question.innerHTML = window.cards[counterId].description;
     answer1.textContent = window.cards[counterId].choices.a.label;
     answer2.textContent = window.cards[counterId].choices.b.label;
-    answer3.textContent = window.cards[counterId].choices.c.label;
-
-// ADVIES TYPE ONDERNEMER
-    if (window.cards[counterId].choices.a.value == "wereldverbeteraar") {
-        wereldverbeteraar ++;   
-    } else if (window.cards[counterId].choices.a.value == "geldwolf"){
-        geldwolf ++;
-    } else if (window.cards[counterId].choices.a.value == "opportunist"){
-        opportunist ++;
-    } else {
-        innovator ++;
-    }
-    console.log(opportunist);
 
     // Deze if functies dienen om de knoppen zichtbaar of onzichtbaar te maken wanneer deze niet nodig zijn.
     if (counter == 0) {
@@ -124,7 +108,7 @@ function setQuestion(counterId) {
     } else {
         buttonPrev.classList.remove('notvis');
     }
-    if (counter > 4) {
+    if (counter > 11) {
        
         buttonNext.addEventListener("click", function() {
             buttonPrev.classList.add('notvis');
@@ -134,7 +118,7 @@ function setQuestion(counterId) {
     } else {
         buttonPrev.classList.remove('notvis');
     }
-    // setScore();
+    setScore();
 }
 
 
@@ -174,23 +158,23 @@ buttonNext.addEventListener("click", function() {
     }
 
     // console.log("Value: ", value)
-    // storeAnswer(counter, value);
-    //   let userChoice = get("q" + counter) || false;
-    //   switch(userChoice) {
-    //     case 'a':
-    //          val = window.cards[counter].choices.a.values.valuation;
-    //          hap = window.cards[counter].choices.a.values.happiness;
-    //       break;
+    storeAnswer(counter, value);
+      let userChoice = get("q" + counter) || false;
+      switch(userChoice) {
+        case 'a':
+             val = window.cards[counter].choices.a.values.valuation;
+             hap = window.cards[counter].choices.a.values.happiness;
+          break;
 
-    //     case 'b':
-    //          val = window.cards[counter].choices.b.values.valuation;
-    //          hap = window.cards[counter].choices.b.values.happiness;
-    //       break;
+        case 'b':
+             val = window.cards[counter].choices.b.values.valuation;
+             hap = window.cards[counter].choices.b.values.happiness;
+          break;
 
-    //     default:
-    //       break;
-    //   }
-    //     setGameScore(val,hap)
+        default:
+          break;
+      }
+        setGameScore(val,hap)
     nextQuestion();
     // console.log(counter);
 });

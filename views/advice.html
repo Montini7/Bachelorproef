@@ -10,7 +10,7 @@
             </div>
             <div class="advice-grid">
                
-                            <h1 id="score">Je hebt 6/6</h1>
+                            <h1 id="score">Je bent een wereldverbeteraar!</h1>
                             <br>
                         <ul id="response">
                             
@@ -29,16 +29,16 @@ const get = (f) => {
     return false;
 };
 
-    let correct = get('correctAnswers');
+    // let correct = get('correctAnswers');
     
-for (let i = 0; i < window.cards.length; i+=1) {
-    document.getElementById('response').innerHTML += '<li>' + window.cards[i].description + '</li><li> Het juiste antwoord is ' + window.cards[i].correctAnswer + '</li>';
-}
+// for (let i = 0; i < window.cards.length; i+=1) {
+//     document.getElementById('response').innerHTML += '<li>' + window.cards[i].description + '</li><li> Het juiste antwoord is ' + window.cards[i].correctAnswer + '</li>';
+// }
 
-function giveAdvice(){
-    document.getElementById("score").innerHTML = 'Score: ' + correct + '/'+window.cards.length;
-}
-window.onload = giveAdvice;
+// function giveAdvice(){
+//     document.getElementById("score").innerHTML = 'Score: ' + correct + '/'+window.cards.length;
+// }
+// window.onload = giveAdvice;
 
 </script>
 <% include master/footer.html %>
