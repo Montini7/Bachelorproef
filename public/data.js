@@ -1,29 +1,33 @@
 window.cards = [
 	{
 		"id": 1,
-		"description": "<em>Vraag 1/6:</em><br> Waarom wil je een startup beginnen?",
-		"character": "Lucas <br> De Designer",
-		"image": "<img src='assets/img/designer.png'>",
+		"description": "<em>Jeff Bezos vraagt:</em><br>'Waarom wil je een startup beginnen?'",
+		"image": "<img src='assets/img/jef.png'>",
 		"choices": {
 			"a": {
 				"label": "Om eigen baas te zijn",
 				"values": "opportunist"
 			},
 			"b": {
-				"label": "Om veel geld te verdienen!",
+				"label": "Om veel geld te verdienen",
 				"values": "geldwolf"
 			},
 			"c": {
-				"label": "Om een impact te hebben op de wereld",
+				"label": "Om de wereld te introduceren aan de toekomst",
+				"values": "wereldverbeteraar"
+			},
+			"d": {
+				"label": "Om mijn visie de realiteit te maken",
 				"values": "wereldverbeteraar"
 			}
+
 
 		}
 	},{
 		"id": 2,
-		"description": "<em>Vraag 2/6:</em><br>Wat is de basis van jouw business strategie?",
-		"character": "Tymo <br> De Developer",
-		"image": "<img src='assets/img/developer.png'>",
+		"description": "'Wat is de basis van jouw business strategie?'",
+		"character": " Anita Roddick vraagt:",
+		"image": "<img src='assets/img/anita.png'>",
 		"choices": {
 			"a": {
 				"label": "Een oud idee verbeteren",
@@ -36,13 +40,17 @@ window.cards = [
 		"c": {
 			"label": "Eender wat, zolang de wereld er beter van wordt",
 			"values":"wereldverbeteraar"
+		},
+		"d": {
+			"label": "Om een impact te hebben op de wereld",
+			"values": "wereldverbeteraar"
 		}
 	}
 	},{
 		"id": 3,
 		"description": "<em>Vraag 3/6:</em><br>Hoe maak je een belangrijke beslissing?",
 		"character": "Tymo <br> De Developer",
-		"image": "<img src='assets/img/developer.png'>",
+		"image": "<img src='assets/img/richard.png'>",
 		"choices": {
 			"a": {
 				"label": "Buikgevoel",
@@ -55,13 +63,17 @@ window.cards = [
 		"c": {
 			"label": "Analyses & onderzoek",
 			"values":"innovator"
+		},
+		"d": {
+			"label": "Om een impact te hebben op de wereld",
+			"values": "wereldverbeteraar"
 		}
 	}
 	},{
 		"id": 4,
 		"description": "<em>Vraag 4/6:</em><br>Zou jij een natuurgebied verwoesten voor financiele voordelen?",
 		"character": "Tymo <br> De Developer",
-		"image": "<img src='assets/img/developer.png'>",
+		"image": "<img src='assets/img/mark.png'>",
 		"choices": {
 			"a": {
 				"label": "Als het moet",
@@ -73,6 +85,10 @@ window.cards = [
 			},
 		"c": {
 			"label": "Nooit!",
+			"values": "wereldverbeteraar"
+		},
+		"d": {
+			"label": "Om een impact te hebben op de wereld",
 			"values": "wereldverbeteraar"
 		}
 	}
@@ -93,6 +109,10 @@ window.cards = [
 		"c": {
 			"label": "Als ze op groene energie draaien",
 			"values":"wereldverbeteraar"
+		},
+		"d": {
+			"label": "Om een impact te hebben op de wereld",
+			"values": "wereldverbeteraar"
 		}
 	}
 	},{
@@ -112,7 +132,16 @@ window.cards = [
 			"c": {
 				"label": "De wereld een betere plek maken",
 				"values":"innovator"
+			},
+			"d": {
+				"label": "Om een impact te hebben op de wereld",
+				"values": "wereldverbeteraar"
 			}
 		}
+	},{"id": 7,
+	"description": "Je geeft om wat er om je heen gebeurt op het vlak van milieu en gezondheid. Jij wil met jouw onderneming onze planeet een betere plek maken voor iedereen.",
+	"character": "wereldverbeteraar",
+	"image": "<img src='assets/img/anita.png'>",
+	"startup": "The bodyshop"
 	}
 ]

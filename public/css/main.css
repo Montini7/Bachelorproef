@@ -15,10 +15,10 @@ p{
 h1{
   font-size:1.8em;
   font-family: 'Bitter', serif;
-  font-weight: bolder;
   color:#3B403B;
   text-align:center;
   padding-top:0px;
+  font-weight: bold;
   }
 
 h2{
@@ -42,6 +42,7 @@ h3{
 a{
   text-decoration: none;
   color:#3B403B;
+  height:0px;
 }
 .nav {
   margin-right:80px;
@@ -71,9 +72,9 @@ strong{
 }
 
 em{
-  font-style:cursive;
   font-size:0.9em;
-  color:rgb(172, 172, 172);
+  font-weight:normal;
+  font-style:normal;
 }
 .back{
   position: absolute;
@@ -136,8 +137,6 @@ em{
     width: 90%;
     height:85vh;
     margin-top:60px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     background-color:white;
   }
   .gameboy2{
@@ -251,56 +250,26 @@ input[type=submit] {
   padding-bottom:5%;
 }
 .buttons{
-  bottom:10% !important;
+  bottom:15%;
+}
+#startup{
+  margin-top:5%;
+  margin-bottom:5%;
+}
+#description{
+  margin-bottom:5%;
+}
+#score{
+  margin-bottom:5%;
+  font-size:1.5em;
+}
+#question{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  height:0px;
+  padding-bottom:100px;
 }
 
-/* ---------------------- SCORE BARS ---------------------------------------*/
-/* 
-.score-bars-mobile{
-  display:block;
-}
-
-#score-bar1-mobile{
-  position: relative;
-  display:block;
-  padding:5px;
-  margin:1%;
-  font-size:12px;
-  line-height:12px;
-  border-radius:30px;
-}
-#score-bar1-mobile span{
-  position: relative;
-  display:inline-block;
-  vertical-align: middle;
-  height: 15px;
-  margin-left:1px;
-  width:50%;
-  border-radius:10px 0 0 10px;
-  overflow: hidden;
-  background-color:#FF6854;
-  color:white;
-}
-#score-bar2-mobile{
-  position: relative;
-  display:block;
-  padding:5px;
-  margin:1%;
-  font-size:12px;
-  line-height:12px;
-  border-radius:30px;
-}
-#score-bar2-mobile span{
-  position: relative;
-  display:inline-block;
-  vertical-align: middle;
-  height: 15px;
-  margin-left:1px;
-  border-radius:10px 0 0 10px;
-  overflow: hidden;
-  background-color:#26B335;
-  color:white;
-} */
 .button{
   width:120px;
   height:30px;
@@ -472,8 +441,15 @@ input[type=email], input[type=password], input[type=text], textarea {
     font-size:0.85em;
     padding-bottom:15px;
     }
-  #score{
-    margin-top:30px;
+  .advice-grid{
+    display:grid;
+    padding:5%;
+    margin-top:40px;
+  }
+  #personage-advice{
+    width:50%;
+    margin:0 auto;
+    margin-bottom:40px; 
   }
 /* ------------------------------ Iphone 5 ---------------------------------------*/
 @media only screen and (min-width: 220px) {
@@ -493,6 +469,9 @@ input[type=email], input[type=password], input[type=text], textarea {
       font-size:1em;
       z-index:100;
       margin-right:50px;
+    }
+    .buttons{
+      bottom:10%;
     }
   }
 
@@ -517,12 +496,16 @@ input[type=email], input[type=password], input[type=text], textarea {
   }
   #question{
     font-size:1.2em;
+    text-align:center;
   }
   .answers{
     font-size:1em;
   }
   #buttonPrev{
     margin-left:50px;
+  }
+  .buttons{
+    bottom:15%;
   }
 }
 /* ----------------------------- Iphone 7+ -------------------------------------------*/
@@ -538,6 +521,9 @@ input[type=email], input[type=password], input[type=text], textarea {
     #buttonPrev{
       margin-left:60px;
     }
+    .buttons{
+      bottom:20%;
+    }
 }
 @media only screen and (min-height:812px){
   body{
@@ -545,6 +531,9 @@ input[type=email], input[type=password], input[type=text], textarea {
   }
   .grid-item{
     margin-top:20px;
+  }
+  .buttons{
+    bottom:25%;
   }
 }
 /* DESKTOP RESPONSIVE ------------------------------------------------------------------------------------*/
@@ -556,9 +545,8 @@ input[type=email], input[type=password], input[type=text], textarea {
     font-size:1em;
    }
    h1{
-    font-size:2em;
+    font-size:1.5em;
     font-family: 'Bitter', serif;
-    font-weight: bolder;
     color:#3B403B;
     text-align:left;
     padding-top:0px;
@@ -587,6 +575,7 @@ input[type=email], input[type=password], input[type=text], textarea {
 }
 p {
   font-size:1.05em;
+  line-height: 26px;
 }
 .mobile{
   display:none;
@@ -625,8 +614,13 @@ p {
   }
   #question{
     padding-bottom:0%;
+    text-align:left;
   }
-
+  #personage-advice{
+    width:80%;
+    margin-left:100px;
+    margin-bottom:0px; 
+  }
 
 /* ------------------- Landing Page Styling -------------------------------*/
 
@@ -793,6 +787,7 @@ span{
   position: absolute;
   z-index:10;
   width:75%;
+  top:20px;
 }
 
 .img-container img{
@@ -808,6 +803,7 @@ z-index:20;
 }
 #question{
   font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
 }
 
 
@@ -829,15 +825,13 @@ z-index:20;
     overflow: auto;
 }
 .advice-grid{
+  display:grid;
   padding:5%;
+  grid-template-columns:1fr 1fr;
 }
-.advice-grid li{
-  padding:2%;
-  border-bottom:2px solid grey;
-}
+
 
 /* ------------------------------------------ GRID */
-
 .grid-item{
   display:grid;
   position: relative;
@@ -960,25 +954,7 @@ input[type="radio"]:checked {
   background-color:#26B335;
   color:white;
 }
-/* #score-bar3{
-  position: relative;
-  display:block;
-  padding:5px;
-  margin:2%;
-  font-size:12px;
-  line-height:12px;
-  border-radius:30px;
+.spaghetti{
+  margin-top:60px;
 }
-#score-bar3 span{
-  position: relative;
-  display:inline-block;
-  vertical-align: middle;
-  height: 15px;
-  margin-left:1px;
-  width:50%;
-  border-radius:10px 0 0 10px;
-  overflow: hidden;
-  background-color:#26B335;
-  color:white;
-} */
 }

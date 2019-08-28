@@ -9,13 +9,20 @@
                 
             </div>
             <div class="advice-grid">
+                    <div id="personage-advice" class="mobile">
+                            <img class="mobile" src="assets/img/designer.png">
+                   </div>
+                <div class="advice-item spaghetti">
                
                             <h1 id="score">Je bent een wereldverbeteraar!</h1>
-                            <br>
-                        <ul id="response">
-                            
-                        </ul>
-
+                            <h3 id="startup">Type startup: The bodyshop</span></h3>
+                            <p id="description">Je geeft om wat er om je heen gebeurt op de planeet. Jij wil met jouw onderneming onze planeet een betere plek maken voor iedereen.</p>
+                        </div>
+                        <div class="advice-item">
+                                <div id="personage-advice" class="not-mobile">
+                                    <img src="assets/img/wereldverbeteraar.png">
+                                </div>
+                        </div>
                     
             </div>
             
@@ -29,16 +36,18 @@ const get = (f) => {
     return false;
 };
 
-    // let correct = get('correctAnswers');
-    
-// for (let i = 0; i < window.cards.length; i+=1) {
-//     document.getElementById('response').innerHTML += '<li>' + window.cards[i].description + '</li><li> Het juiste antwoord is ' + window.cards[i].correctAnswer + '</li>';
-// }
+let wereldverbeteraar = get('wereldverbeteraar') || false;
+let innovator = get('innovator') || false;
+let opportunist = get('opportunist') || false;
+let geldwolf = get('geldwolf') || false;
+let ondernemersScores = [wereldverbeteraar,innovator,opportunist,geldwolf];
+let ondernemersTypes = ['wereldverbeteraar','innovator','opportunist','geldwolf'];
+let highestScore = ondernemersScores.findIndex(isLargeNumber);
 
-// function giveAdvice(){
-//     document.getElementById("score").innerHTML = 'Score: ' + correct + '/'+window.cards.length;
-// }
-// window.onload = giveAdvice;
+function isLargeNumber(element) {
+  return element > 2;
+}
+    document.getElementById('score').innerHTML = 'Je bent een ' + ondernemersTypes[highestScore] + '!';
 
 </script>
 <% include master/footer.html %>

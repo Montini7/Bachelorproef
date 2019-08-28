@@ -5,21 +5,20 @@ const buttonPrev = document.getElementById("buttonPrev");
 let answer1 = document.getElementById("answer1");
 let answer2 = document.getElementById("answer2");
 let answer3 = document.getElementById("answer3");
+let answer4 = document.getElementById("answer4");
+
 
 let radio1 = document.getElementById("radio1");
 let radio2 = document.getElementById("radio2");
 let radio3 = document.getElementById("radio3");
+let radio4 = document.getElementById("radio4");
+
 let inputRadioBtn = document.getElementsByClassName("radioBtn");
 
 let geldwolf = 0;
 let opportunist = 0;
 let wereldverbeteraar = 0;
 let innovator = 0;
-// let val=0;
-// let hap=0;
-
-// let valWidth = 0;
-// let hapWidth = 0;
 
 
 // Aantal vragen
@@ -27,7 +26,6 @@ const questionsCount = 5;
 
 // Lege array om de antwoorden in op te slagen.
 let answers = [];
-
 
 // Eerste vraag standaard inladen
 let question = document.getElementById("question");
@@ -56,36 +54,11 @@ answer2.addEventListener("click", function() {
 answer3.addEventListener("click", function() {
     document.getElementById("radio3").checked = true;
 });
+answer4.addEventListener("click", function() {
+    document.getElementById("radio4").checked = true;
+});
 
 
-// Deze functie dient om de score te berekenen en het advies te geven.
-// function setScore() {
-//     // Variabele die op 0 staat, hier worden later het aantal correcte antwoorden in opgeslagen.
-//     let correct = 0;
-//     for (let i = 0; i < window.cards.length; i++) {
-//         var card = window.cards[i];
-//         var correctAnswer = card.correctAnswer;
-//         var userAnswer = get("q" + i) || false;
-//         if (correctAnswer == userAnswer) {
-//             //  console.log('You answered question ' + i + ' correct = ' + correctAnswer)
-//             correct += 1;
-//         }// else {
-//         //      console.log('You answered question ' + i + ' wrong, correct answer was ' + correctAnswer)
-//         // }
-        
-//     }
-//     set('correctAnswers',correct);
-// }
-// console.log('Score: ' + correct + '/'+window.cards.length)
-// function setGameScore(val,hap) {
-//     valWidth = valuatie + val;
-//     hapWidth = happiness + hap;
-//     valuatie= valWidth;
-//     happiness = hapWidth;
-
-//     getValScore.style.width = valWidth + '%';
-//     getHapScore.style.width = hapWidth + '%';
-// }
 
 // deze functie definieert het veranderen van een vraag.
 function setQuestion(counterId) {
@@ -98,25 +71,17 @@ function setQuestion(counterId) {
         // console.log('First time question')
     }
 
-    document.getElementById("character").innerHTML = window.cards[counterId].character;
     document.getElementById("personage-mobile").innerHTML = window.cards[counterId].image;
     document.getElementById("personage").innerHTML = window.cards[counterId].image;
     question.innerHTML = window.cards[counterId].description;
     answer1.textContent = window.cards[counterId].choices.a.label;
     answer2.textContent = window.cards[counterId].choices.b.label;
     answer3.textContent = window.cards[counterId].choices.c.label;
+    answer4.textContent = window.cards[counterId].choices.d.label;
 
-// ADVIES TYPE ONDERNEMER
-    if (window.cards[counterId].choices.a.value == "wereldverbeteraar") {
-        wereldverbeteraar ++;   
-    } else if (window.cards[counterId].choices.a.value == "geldwolf"){
-        geldwolf ++;
-    } else if (window.cards[counterId].choices.a.value == "opportunist"){
-        opportunist ++;
-    } else {
-        innovator ++;
-    }
-    console.log(opportunist);
+
+
+   
 
     // Deze if functies dienen om de knoppen zichtbaar of onzichtbaar te maken wanneer deze niet nodig zijn.
     if (counter == 0) {
@@ -130,6 +95,10 @@ function setQuestion(counterId) {
             buttonPrev.classList.add('notvis');
             buttonNext.classList.add('notvis');
             buttonEnd.classList.remove('notvis');
+            set('wereldverbeteraar', wereldverbeteraar);
+            set('geldwolf', geldwolf);
+            set('innovator', innovator);
+            set('opportunist', opportunist);
         });
     } else {
         buttonPrev.classList.remove('notvis');
@@ -172,27 +141,68 @@ buttonNext.addEventListener("click", function() {
         }
         options[i].checked = false;
     }
+    storeAnswer(counter, value);
+    // ADVIES TYPE ONDERNEMER
+    let selectedAnswer = get("q" + counter) || false;
+    console.log(counter);
 
-    // console.log("Value: ", value)
-    // storeAnswer(counter, value);
-    //   let userChoice = get("q" + counter) || false;
-    //   switch(userChoice) {
-    //     case 'a':
-    //          val = window.cards[counter].choices.a.values.valuation;
-    //          hap = window.cards[counter].choices.a.values.happiness;
-    //       break;
+    switch(selectedAnswer) {
+        case 'a': 
+                if (window.cards[counter].choices.a.values == "wereldverbeteraar") {
+                    wereldverbeteraar ++;   
+                } else if (window.cards[counter].choices.a.values == "geldwolf"){
+                    geldwolf ++;
+                } else if (window.cards[counter].choices.a.values == "opportunist"){
+                    opportunist ++;
+                } else if (window.cards[counter].choices.a.values == "innovator"){
+                    innovator ++;
+                }
+          break;
+        case 'b':
+                if (window.cards[counter].choices.b.values == "wereldverbeteraar") {
+                    wereldverbeteraar ++;   
+                } else if (window.cards[counter].choices.b.values == "geldwolf"){
+                    geldwolf ++;
+                } else if (window.cards[counter].choices.b.values == "opportunist"){
+                    opportunist ++;
+                } else if(window.cards[counter].choices.b.values == "innovator"){
+                    innovator ++;
+                }
+          break;
+        case 'c':
+            if (window.cards[counter].choices.c.values == "wereldverbeteraar") {
+                wereldverbeteraar ++;   
+            } else if (window.cards[counter].choices.c.values == "geldwolf"){
+                geldwolf ++;
+            } else if (window.cards[counter].choices.c.values == "opportunist"){
+                opportunist ++;
+            } else if(window.cards[counter].choices.c.values == "innovator"){
+                innovator ++;
+            }
+         break;
+        case 'd':
+            if (window.cards[counter].choices.d.values == "wereldverbeteraar") {
+                wereldverbeteraar ++;   
+            } else if (window.cards[counter].choices.d.values == "geldwolf"){
+                geldwolf ++;
+            } else if (window.cards[counter].choices.d.values == "opportunist"){
+                opportunist ++;
+            } else if(window.cards[counter].choices.d.values == "innovator"){
+                innovator ++;
+         break;
+        }
 
-    //     case 'b':
-    //          val = window.cards[counter].choices.b.values.valuation;
-    //          hap = window.cards[counter].choices.b.values.happiness;
-    //       break;
-
-    //     default:
-    //       break;
-    //   }
-    //     setGameScore(val,hap)
+        default: break;
+          // code block
+      }
+      
+    // console.log('opportunist is ' + opportunist);
+    // console.log('wereldverbeteraar is ' + wereldverbeteraar);
+    // console.log('geldwolf is ' + geldwolf);
+    // console.log('innovator is ' + innovator);
+    
     nextQuestion();
-    // console.log(counter);
+
 });
 // Wanneer je op 'VORIGE' klikt -> verandert image, personage, vraag en antwoorden naar de vorige vraag.
 buttonPrev.addEventListener("click", function() {
