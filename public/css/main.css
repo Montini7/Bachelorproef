@@ -419,7 +419,7 @@ input[type=email], input[type=password], input[type=text], textarea {
   transition: all .05s ease-in-out;
 }
 #buttonEnd{
-  width:120px;
+  width:80px;
   height:35px;
   border-radius: 30px;
   margin:0 auto;
