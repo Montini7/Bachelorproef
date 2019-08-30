@@ -49,5 +49,26 @@ function isLargeNumber(element) {
 }
     document.getElementById('score').innerHTML = 'Je bent een ' + ondernemersTypes[highestScore] + '!';
 
+                if (ondernemersTypes[highestScore] == wereldverbeteraar) {
+                    document.getElementById('startup').innerHTML = window.cards.id[11].startup;
+                    document.getElementById('description').innerHTML = window.cards.id[11].description;
+
+                } else if (ondernemersTypes[highestScore] == "geldwolf"){
+                    document.getElementById('startup').innerHTML = window.cards[12].startup;
+                    document.getElementById('description').innerHTML = window.cards[12].description;
+                } else if (ondernemersTypes[highestScore] == "opportunist"){
+                    document.getElementById('startup').innerHTML = window.cards[13].startup;
+                    document.getElementById('description').innerHTML = window.cards[13].description;
+                } else if (ondernemersTypes[highestScore] == "visionair"){
+                    document.getElementById('startup').innerHTML = window.cards.id[14].startup;
+                    document.getElementById('description').innerHTML = window.cards[14].description;
+                } else if (ondernemersTypes[highestScore] == "revolutionair"){
+                    document.getElementById('startup').innerHTML = window.cards[15].startup;
+                    document.getElementById('description').innerHTML = window.cards[15].description;
+                } else if (ondernemersTypes[highestScore] == "analist"){
+                    document.getElementById('startup').innerHTML = window.cards[16].startup;
+                    document.getElementById('description').innerHTML = window.cards[16].description;
+                }
+
 </script>
 <% include master/footer.html %>

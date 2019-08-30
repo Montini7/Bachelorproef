@@ -18,11 +18,13 @@ let inputRadioBtn = document.getElementsByClassName("radioBtn");
 let geldwolf = 0;
 let opportunist = 0;
 let wereldverbeteraar = 0;
-let innovator = 0;
+let visionair = 0;
+let revolutionair = 0;
+let analist = 0;
 
 
 // Aantal vragen
-const questionsCount = 5;
+const questionsCount = 9;
 
 // Lege array om de antwoorden in op te slagen.
 let answers = [];
@@ -89,7 +91,7 @@ function setQuestion(counterId) {
     } else {
         buttonPrev.classList.remove('notvis');
     }
-    if (counter > 4) {
+    if (counter > 8) {
        
         buttonNext.addEventListener("click", function() {
             buttonPrev.classList.add('notvis');
@@ -97,8 +99,10 @@ function setQuestion(counterId) {
             buttonEnd.classList.remove('notvis');
             set('wereldverbeteraar', wereldverbeteraar);
             set('geldwolf', geldwolf);
-            set('innovator', innovator);
+            set('visionair', visionair);
             set('opportunist', opportunist);
+            set('revolutionair', revolutionair);
+            set('analist', analist);
         });
     } else {
         buttonPrev.classList.remove('notvis');
@@ -154,9 +158,14 @@ buttonNext.addEventListener("click", function() {
                     geldwolf ++;
                 } else if (window.cards[counter].choices.a.values == "opportunist"){
                     opportunist ++;
-                } else if (window.cards[counter].choices.a.values == "innovator"){
-                    innovator ++;
+                } else if (window.cards[counter].choices.a.values == "visionair"){
+                    visionair ++;
+                } else if (window.cards[counter].choices.a.values == "revolutionair"){
+                    revolutionair ++;
+                } else if (window.cards[counter].choices.a.values == "analist"){
+                    analist ++;
                 }
+                
           break;
         case 'b':
                 if (window.cards[counter].choices.b.values == "wereldverbeteraar") {
@@ -165,8 +174,12 @@ buttonNext.addEventListener("click", function() {
                     geldwolf ++;
                 } else if (window.cards[counter].choices.b.values == "opportunist"){
                     opportunist ++;
-                } else if(window.cards[counter].choices.b.values == "innovator"){
-                    innovator ++;
+                } else if(window.cards[counter].choices.b.values == "visionair"){
+                    visionair ++;
+                } else if (window.cards[counter].choices.b.values == "revolutionair"){
+                    revolutionair ++;
+                } else if (window.cards[counter].choices.b.values == "analist"){
+                    analist ++;
                 }
           break;
         case 'c':
@@ -176,9 +189,14 @@ buttonNext.addEventListener("click", function() {
                 geldwolf ++;
             } else if (window.cards[counter].choices.c.values == "opportunist"){
                 opportunist ++;
-            } else if(window.cards[counter].choices.c.values == "innovator"){
-                innovator ++;
+            } else if(window.cards[counter].choices.c.values == "visionair"){
+                visionair ++;
+            } else if (window.cards[counter].choices.c.values == "revolutionair"){
+                revolutionair ++;
+            } else if (window.cards[counter].choices.c.values == "analist"){
+                analist ++;
             }
+
          break;
         case 'd':
             if (window.cards[counter].choices.d.values == "wereldverbeteraar") {
@@ -187,19 +205,22 @@ buttonNext.addEventListener("click", function() {
                 geldwolf ++;
             } else if (window.cards[counter].choices.d.values == "opportunist"){
                 opportunist ++;
-            } else if(window.cards[counter].choices.d.values == "innovator"){
-                innovator ++;
+            } else if(window.cards[counter].choices.d.values == "visionair"){
+                visionair ++;
+            } else if (window.cards[counter].choices.d.values == "revolutionair"){
+                revolutionair ++;
+            } else if (window.cards[counter].choices.d.values == "analist"){
+                analist ++;
+            }
          break;
-        }
-
         default: break;
+    }
           // code block
-      }
       
     // console.log('opportunist is ' + opportunist);
     // console.log('wereldverbeteraar is ' + wereldverbeteraar);
     // console.log('geldwolf is ' + geldwolf);
-    // console.log('innovator is ' + innovator);
+    // console.log('visionair is ' + visionair);
     
     nextQuestion();
 
