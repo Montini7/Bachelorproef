@@ -221,7 +221,7 @@ input[type=submit] {
 }
 
 #personage-mobile{
-  width:40%;
+  width:50%;
   position: relative;
   margin:0 auto;
   margin-top:0px;
@@ -383,7 +383,6 @@ input[type=email], input[type=password], input[type=text], textarea {
   display:block;
 }
 .buttons{
-  position: absolute;
   bottom:5%;
 }
 
