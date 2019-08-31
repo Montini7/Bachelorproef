@@ -1,8 +1,8 @@
 window.cards = [
 	{
 		"id": 1,
-		"description": "<em>Jeff Bezos vraagt:</em><br>'Waarom wil je een startup beginnen?'",
-		"image": "<img src='assets/img/jef.png'>",
+		"description": "<em>Jef Bezos vraagt:</em><br>'Waarom wil je een startup beginnen?'",
+		"image": "<img src='assets/img/bezos.png'>",
 		"choices": {
 			"a": {
 				"label": "Om  de wereld een betere plek te maken",
@@ -115,7 +115,7 @@ window.cards = [
 	},{
 		"id": 6,
 		"description": "<em>Jef Bezos vraagt:</em><br>'Welke optie kies je als antwoord op een belangrijke vraag?'",
-		"image": "<img src='assets/img/jef.png'>",
+		"image": "<img src='assets/img/bezos.png'>",
 		"choices": {
 			"a": {
 				"label": "De optie die het beste aanvoelt",
