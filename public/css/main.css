@@ -384,7 +384,7 @@ input[type=email], input[type=password], input[type=text], textarea {
 }
 .buttons{
   position: absolute;
-  bottom:5%;
+  bottom:2%;
 }
 
 #buttonPrev{
