@@ -250,7 +250,7 @@ input[type=submit] {
   padding-bottom:5%;
 }
 .buttons{
-  bottom:0%;
+  bottom:15%;
 }
 #startup{
   margin-top:5%;
@@ -607,7 +607,7 @@ p {
 
   }
   .buttons{
-    bottom: 5%;
+    bottom:15%;
   }
   #character{
     padding-bottom:0%;
