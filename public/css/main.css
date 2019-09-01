@@ -468,10 +468,10 @@ input[type=email], input[type=password], input[type=text], textarea {
     .nav {
       font-size:1em;
       z-index:100;
-      margin-right:50px;
+      margin-right:30px;
     }
     .buttons{
-      bottom:2%;
+      bottom:0;
     }
   }
 
