@@ -383,6 +383,7 @@ input[type=email], input[type=password], input[type=text], textarea {
   display:block;
 }
 .buttons{
+  position: absolute;
   bottom:5%;
 }
 
