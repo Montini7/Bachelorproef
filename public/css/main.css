@@ -505,7 +505,7 @@ input[type=email], input[type=password], input[type=text], textarea {
     margin-left:50px;
   }
   .buttons{
-    bottom:15%;
+    bottom:5%;
   }
 }
 /* ----------------------------- Iphone 7+ -------------------------------------------*/
@@ -533,7 +533,7 @@ input[type=email], input[type=password], input[type=text], textarea {
     margin-top:20px;
   }
   .buttons{
-    bottom:25%;
+    bottom:5%;
   }
 }
 /* DESKTOP RESPONSIVE ------------------------------------------------------------------------------------*/
