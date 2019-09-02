@@ -458,6 +458,7 @@ input[type=email], input[type=password], input[type=text], textarea {
       font-size:1em;
       text-align: justify;
       margin-left:0px;
+      padding:10%;
     }
     input[type=submit] {
       margin-left:70px;
