@@ -598,7 +598,7 @@ p {
   padding-bottom:0px;
   }
   .gameboy3{
-    overflow-y: hidden;
+    overflow-y: scroll;
 
   }
   .buttons{
