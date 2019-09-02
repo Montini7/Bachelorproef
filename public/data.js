@@ -225,26 +225,26 @@ window.cards = [
 	},{"id": 11,
 	"description": "Je geeft om wat er om je heen gebeurt op de planeet. Jij wil met jouw onderneming de wereld een betere plek maken voor iedereen.",
 	"character": "wereldverbeteraar",
-	"startup": "Type startup: The bodyshop1"
+	"startup": "Type startup: <a href='https://nl.wikipedia.org/wiki/The_Body_Shop'>The bodyshop</a>"
 	},{"id": 12,
 	"description": "De oude manier werkt niet, jij introduceert de wereld aan de toekomst. Tijd voor een revolutie!",
 	"character": "revolutionair",
-	"startup": "Type startup: SpaceX"
+	"startup": "Type startup: <a href='https://nl.wikipedia.org/wiki/SpaceXSpaceX'>SpaceX</a>"
 	},{"id": 13,
 	"description": "Elke beslissing die jij neemt is nauwkeurig geanalyseerd en wordt ondersteund door onderzoek.",
 	"character": "analist",
-	"startup": "Type startup: Amazon"
+	"startup": "Type startup: <a href='https://nl.wikipedia.org/wiki/Amazon.com'>Amazon</a>"
 	},{"id": 14,
 	"description": "Jij volgt jouw buikgevoel blindelings. Anderen zien problemen, jij ziet oplossingen!",
 	"character": "opportunist",
-	"startup": "Type startup: Airbnb"
+	"startup": "Type startup: <a href='https://nl.wikipedia.org/wiki/Airbnb'>Airbnb</a>"
 	},{"id": 15,
 	"description": "‘You’re all about the money!’ Geld maakt jou wel gelukkig. Rijk worden is en blijft jouw doel in het leven.",
 	"character": "geldwolf",
-	"startup": "Type startup: The Trump Organization"
+	"startup": "Type startup:<a href='https://nl.wikipedia.org/wiki/Herbalife'>Herbalife</a>"
 	},{"id": 16,
 	"description": "Elke stap die jij zet maakt deel uit van het grote plan. Niemand kan iets veranderen aan jouw visie voor de toekomst.",
 	"character": "visionair",
-	"startup": "Type startup: Tesla"
+	"startup": "Type startup:<a href='https://nl.wikipedia.org/wiki/Tesla,_Inc.'> Tesla, inc.</a>"
 	}
 ]

@@ -39,6 +39,10 @@ h3{
 .welcome span{
   font-weight: bolder;
 }
+#startup a{
+color:blue;
+text-decoration: underline;
+}
 a{
   text-decoration: none;
   color:#3B403B;
@@ -458,6 +462,9 @@ input[type=email], input[type=password], input[type=text], textarea {
       z-index:100;
       margin-right:30px;
     }
+    .button{
+      padding: 8px 35px;
+    }
     .buttons{
       bottom:20px;
     }
@@ -491,6 +498,9 @@ input[type=email], input[type=password], input[type=text], textarea {
   }
   #buttonPrev{
     margin-left:50px;
+  }
+  .button{
+    padding: 8px 35px;
   }
   .buttons{
     bottom:20px;
