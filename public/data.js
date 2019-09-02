@@ -241,10 +241,10 @@ window.cards = [
 	},{"id": 15,
 	"description": "‘You’re all about the money!’ Geld maakt jou wel gelukkig. Rijk worden is en blijft jouw doel in het leven.",
 	"character": "geldwolf",
-	"startup": "Type startup:<a href='https://nl.wikipedia.org/wiki/Herbalife'>Herbalife</a>"
+	"startup": "Type startup: <a href='https://nl.wikipedia.org/wiki/Herbalife'>Herbalife</a>"
 	},{"id": 16,
 	"description": "Elke stap die jij zet maakt deel uit van het grote plan. Niemand kan iets veranderen aan jouw visie voor de toekomst.",
 	"character": "visionair",
-	"startup": "Type startup:<a href='https://nl.wikipedia.org/wiki/Tesla,_Inc.'>Tesla, inc.</a>"
+	"startup": "Type startup: <a href='https://nl.wikipedia.org/wiki/Tesla,_Inc.'>Tesla, inc.</a>"
 	}
 ]

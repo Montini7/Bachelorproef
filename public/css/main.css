@@ -373,7 +373,7 @@ input[type=email], input[type=password], input[type=text], textarea {
   display:block;
 }
 .buttons{
-  padding-top:15px;
+  padding-top:5px;
   margin-left:0;
 }
 
