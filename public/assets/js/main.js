@@ -221,12 +221,12 @@ buttonNext.addEventListener("click", function() {
     // console.log('wereldverbeteraar is ' + wereldverbeteraar);
     // console.log('geldwolf is ' + geldwolf);
     // console.log('visionair is ' + visionair);
-    console.log('wereldverbeteraar ' + wereldverbeteraar);
-    console.log('opportunist ' + opportunist);
-    console.log('revolutionair ' +revolutionair);
-    console.log('geldwolf ' +geldwolf);
-    console.log('analist ' +analist);
-    console.log('visionair ' +visionair);
+    // console.log('wereldverbeteraar ' + wereldverbeteraar);
+    // console.log('opportunist ' + opportunist);
+    // console.log('revolutionair ' +revolutionair);
+    // console.log('geldwolf ' +geldwolf);
+    // console.log('analist ' +analist);
+    // console.log('visionair ' +visionair);
     
     nextQuestion();
 
