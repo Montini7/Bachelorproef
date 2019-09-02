@@ -245,6 +245,6 @@ window.cards = [
 	},{"id": 16,
 	"description": "Elke stap die jij zet maakt deel uit van het grote plan. Niemand kan iets veranderen aan jouw visie voor de toekomst.",
 	"character": "visionair",
-	"startup": "Type startup:<a href='https://nl.wikipedia.org/wiki/Tesla,_Inc.'> Tesla, inc.</a>"
+	"startup": "Type startup:<a href='https://nl.wikipedia.org/wiki/Tesla,_Inc.'>Tesla, inc.</a>"
 	}
 ]
