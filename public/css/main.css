@@ -374,7 +374,7 @@ input[type=email], input[type=password], input[type=text], textarea {
 }
 .buttons{
   position: absolute;
-  bottom:10px;
+  bottom:20px;
   margin-left:0;
 }
 
@@ -466,7 +466,7 @@ input[type=email], input[type=password], input[type=text], textarea {
       padding: 8px 30px;
     }
     .buttons{
-      bottom:10px;
+      bottom:20px;
     }
   }
 
@@ -501,7 +501,7 @@ input[type=email], input[type=password], input[type=text], textarea {
     margin-top:30px;
   }
   .buttons{
-    bottom:10px;
+    bottom:20px;
   }
 }
 /* ----------------------------- Iphone 7+ -------------------------------------------*/
@@ -518,7 +518,7 @@ input[type=email], input[type=password], input[type=text], textarea {
       margin-left:60px;
     }
     .buttons{
-      bottom:10px;
+      bottom:20px;
     }
 }
 @media only screen and (min-height:812px){
@@ -529,7 +529,7 @@ input[type=email], input[type=password], input[type=text], textarea {
     margin-top:20px;
   }
   .buttons{
-    bottom:10px;
+    bottom:20px;
   }
 }
 /* DESKTOP RESPONSIVE ------------------------------------------------------------------------------------*/
@@ -603,7 +603,9 @@ p {
 
   }
   .buttons{
-    bottom:10px;
+    position: absolute;
+    bottom:20px;
+    margin-left:0;
   }
   #character{
     padding-bottom:0%;
