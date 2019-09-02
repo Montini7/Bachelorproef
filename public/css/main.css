@@ -470,7 +470,7 @@ input[type=email], input[type=password], input[type=text], textarea {
 /* ------------------------------ Iphone 6 ---------------------------------------*/
 @media only screen and (min-width: 321px) {
   .nav {
-     margin-right: 60px;
+     margin-right: 30px;
   }
   input[type=submit] {
     margin-left:90px;
@@ -481,7 +481,7 @@ input[type=email], input[type=password], input[type=text], textarea {
     font-size:1.3em;
   }
   #logo{
-    margin: 10px 35px auto;
+    margin: -20px 35px auto;
   }
   .button{
     margin-top:30px;
@@ -497,7 +497,7 @@ input[type=email], input[type=password], input[type=text], textarea {
     margin-left:50px;
   }
   .buttons{
-    bottom:0%;
+    bottom:5%;
   }
 }
 /* ----------------------------- Iphone 7+ -------------------------------------------*/
@@ -599,7 +599,7 @@ p {
 
   }
   .buttons{
-    bottom:15%;
+    bottom:10%;
   }
   #character{
     padding-bottom:0%;

@@ -148,7 +148,7 @@ buttonNext.addEventListener("click", function() {
     storeAnswer(counter, value);
     // ADVIES TYPE ONDERNEMER
     let selectedAnswer = get("q" + counter) || false;
-    console.log(counter);
+    
 
     switch(selectedAnswer) {
         case 'a': 
@@ -213,7 +213,7 @@ buttonNext.addEventListener("click", function() {
                 analist ++;
             }
          break;
-        default: break;
+        default:break;
     }
           // code block
       
@@ -221,6 +221,12 @@ buttonNext.addEventListener("click", function() {
     // console.log('wereldverbeteraar is ' + wereldverbeteraar);
     // console.log('geldwolf is ' + geldwolf);
     // console.log('visionair is ' + visionair);
+    console.log('wereldverbeteraar ' + wereldverbeteraar);
+    console.log('opportunist ' + opportunist);
+    console.log('revolutionair ' +revolutionair);
+    console.log('geldwolf ' +geldwolf);
+    console.log('analist ' +analist);
+    console.log('visionair ' +visionair);
     
     nextQuestion();
 

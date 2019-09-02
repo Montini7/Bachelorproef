@@ -14,7 +14,7 @@ window.cards = [
 			},
 			"c": {
 				"label": "Om de wereld te introduceren aan een nieuw tijdperk",
-				"values": "revolutionist"
+				"values": "revolutionair"
 			},
 			"d": {
 				"label": "Om mijn visie de realiteit te maken",
