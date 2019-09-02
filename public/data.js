@@ -221,36 +221,30 @@ window.cards = [
 				"label": "Een oude business strategie verbeteren",
 				"values": "opportunist"
 			}
-		}
+		} 
 	},{"id": 11,
 	"description": "Je geeft om wat er om je heen gebeurt op de planeet. Jij wil met jouw onderneming de wereld een betere plek maken voor iedereen.",
 	"character": "wereldverbeteraar",
-	"image": "<img src='assets/img/wereldverbeteraar.png'>",
 	"startup": "Type startup: The bodyshop1"
 	},{"id": 12,
-	"description": "Je geeft om wat er om je heen gebeurt op het vlak van milieu en gezondheid. Jij wil met jouw onderneming onze planeet een betere plek maken voor iedereen.",
+	"description": "De oude manier werkt niet, jij introduceert de wereld aan de toekomst. Tijd voor een revolutie!",
 	"character": "revolutionair",
-	"image": "<img src='assets/img/revolutionair.png'>",
-	"startup": "Type startup: The bodyshop"
+	"startup": "Type startup: SpaceX"
 	},{"id": 13,
-	"description": "Je geeft om wat er om je heen gebeurt op het vlak van milieu en gezondheid. Jij wil met jouw onderneming onze planeet een betere plek maken voor iedereen.",
+	"description": "Elke beslissing die jij neemt is nauwkeurig geanalyseerd en wordt ondersteund door onderzoek.",
 	"character": "analist",
-	"image": "<img src='assets/img/analist.png'>",
-	"startup": "The bodyshop"
+	"startup": "Type startup: Amazon"
 	},{"id": 14,
-	"description": "Je geeft om wat er om je heen gebeurt op het vlak van milieu en gezondheid. Jij wil met jouw onderneming onze planeet een betere plek maken voor iedereen.",
+	"description": "Jij volgt jouw buikgevoel blindelings. Anderen zien problemen, jij ziet oplossingen!",
 	"character": "opportunist",
-	"image": "<img src='assets/img/opportunist.png'>",
-	"startup": "The bodyshop"
+	"startup": "Type startup: Airbnb"
 	},{"id": 15,
-	"description": "Je geeft om wat er om je heen gebeurt op het vlak van milieu en gezondheid. Jij wil met jouw onderneming onze planeet een betere plek maken voor iedereen.",
-	"character": "analist",
-	"image": "<img src='assets/img/analist.png'>",
-	"startup": "The bodyshop"
+	"description": "‘You’re all about the money!’ Geld maakt jou wel gelukkig. Rijk worden is en blijft jouw doel in het leven.",
+	"character": "geldwolf",
+	"startup": "Type startup: The Trump Organization"
 	},{"id": 16,
 	"description": "Je geeft om wat er om je heen gebeurt op het vlak van milieu en gezondheid. Jij wil met jouw onderneming onze planeet een betere plek maken voor iedereen.",
-	"character": "geldwolf",
-	"image": "<img src='assets/img/geldwolf.png'>",
-	"startup": "The bodyshop"
+	"character": "visionair",
+	"startup": "Type startup: Tesla"
 	}
 ]

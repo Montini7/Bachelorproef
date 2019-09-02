@@ -168,7 +168,7 @@ em{
 
   }
   .nav {
-    margin-right:80px;
+    margin-right:50px;
     padding-top:35px;
     font-family: 'Bitter', serif;
     font-weight: bolder;
@@ -271,7 +271,7 @@ input[type=submit] {
   color:white;
   font-family: 'Bitter', serif;
   font-weight: bolder;
-  font-size:0.9em;
+  font-size:0.8em;
   background: rgba(223,90,73,1);
   border:0 none;
   cursor:pointer;
@@ -437,7 +437,7 @@ input[type=email], input[type=password], input[type=text], textarea {
     padding:5%;
     margin-top:40px;
   }
-  #personage-advice{
+  #personage-advice-mobile{
     width:50%;
     margin:0 auto;
     margin-bottom:40px; 
