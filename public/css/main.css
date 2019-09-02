@@ -497,7 +497,7 @@ input[type=email], input[type=password], input[type=text], textarea {
     margin-left:50px;
   }
   .buttons{
-    bottom:5%;
+    bottom:0%;
   }
 }
 /* ----------------------------- Iphone 7+ -------------------------------------------*/

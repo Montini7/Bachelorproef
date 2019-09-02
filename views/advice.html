@@ -37,11 +37,14 @@ const get = (f) => {
 };
 
 let wereldverbeteraar = get('wereldverbeteraar') || false;
-let innovator = get('innovator') || false;
+let visionair = get('visionair') || false;
 let opportunist = get('opportunist') || false;
 let geldwolf = get('geldwolf') || false;
-let ondernemersScores = [wereldverbeteraar,innovator,opportunist,geldwolf];
-let ondernemersTypes = ['wereldverbeteraar','innovator','opportunist','geldwolf'];
+let analist = get('analist') || false;
+let revolutionair = get('revolutionair') || false;
+
+let ondernemersScores = [wereldverbeteraar,visionair,opportunist,geldwolf,revolutionair,analist];
+let ondernemersTypes = ['wereldverbeteraar','visionair','opportunist','geldwolf','revolutionair','analist'];
 let highestScore = ondernemersScores.findIndex(isLargeNumber);
 
 function isLargeNumber(element) {
@@ -55,31 +58,37 @@ function isLargeNumber(element) {
                     document.getElementById('description').innerHTML = window.cards.id[10].description;
                     document.getElementById('personage-advice').innerHTML = '<img src="assets/img/wereldverbeteraar.png">';
                     document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/wereldverbeteraar.png">';
+
                 } else if (ondernemersTypes[highestScore] == "geldwolf"){
                     document.getElementById('startup').innerHTML = window.cards[14].startup;
                     document.getElementById('description').innerHTML = window.cards[14].description;
                     document.getElementById('personage-advice').innerHTML = '<img src="assets/img/geldwolf.png">';
                     document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/geldwolf.png">';
+
                 } else if (ondernemersTypes[highestScore] == "opportunist"){
                     document.getElementById('startup').innerHTML = window.cards[13].startup;
                     document.getElementById('description').innerHTML = window.cards[13].description;
                     document.getElementById('personage-advice').innerHTML = '<img src="assets/img/opportunist.png">';
                     document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/opportunist.png">';
+                    
                 } else if (ondernemersTypes[highestScore] == "visionair"){
-                    document.getElementById('startup').innerHTML = window.cards.id[15].startup;
+                    document.getElementById('startup').innerHTML = window.cards[15].startup;
                     document.getElementById('description').innerHTML = window.cards[15].description;
                     document.getElementById('personage-advice').innerHTML = '<img src="assets/img/visionair.png">';
                     document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/visionair.png">';
+
                 } else if (ondernemersTypes[highestScore] == "revolutionair"){
                     document.getElementById('startup').innerHTML = window.cards[11].startup;
                     document.getElementById('description').innerHTML = window.cards[11].description;
                     document.getElementById('personage-advice').innerHTML = '<img src="assets/img/revolutionair.png">';
                     document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/revolutionair.png">';
+
                 } else if (ondernemersTypes[highestScore] == "analist"){
                     document.getElementById('startup').innerHTML = window.cards[12].startup;
                     document.getElementById('description').innerHTML = window.cards[12].description;
                     document.getElementById('personage-advice').innerHTML = '<img src="assets/img/analist.png">';
                     document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/analist.png">';
+
                 }
 
 </script>

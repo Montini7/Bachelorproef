@@ -2,7 +2,7 @@ window.cards = [
 	{
 		"id": 1,
 		"description": "<em>Jef Bezos vraagt:</em><br>'Waarom wil je een startup beginnen?'",
-		"image": "<img src='assets/img/jef.png'>",
+		"image": "<img src='assets/img/jef-laag.png'>",
 		"choices": {
 			"a": {
 				"label": "Om  de wereld een betere plek te maken",
@@ -26,7 +26,7 @@ window.cards = [
 	},{
 		"id": 2,
 		"description": "<em>Anita Roddick vraagt:</em><br>'Waar bewaar jij jouw business-ideëen?'",
-		"image": "<img src='assets/img/anita.png'>",
+		"image": "<img src='assets/img/anita-laag.png'>",
 		"choices": {
 			"a": {
 				"label": "Op een servet",
@@ -49,7 +49,7 @@ window.cards = [
 	},{
 		"id": 3,
 		"description": "<em>Peter Thiel vraagt:</em><br>'Succes meet jij aan de hand van?'",
-		"image": "<img src='assets/img/peter.png'>",
+		"image": "<img src='assets/img/peter-laag.png'>",
 		"choices": {
 			"a": {
 				"label": "Opbrengsten",
@@ -71,7 +71,7 @@ window.cards = [
 	},{
 		"id": 4,
 		"description":"<em>Richard Branson vraagt:</em><br>'Waar ben jij het beste in?'",
-		"image": "<img src='assets/img/richard.png'>",
+		"image": "<img src='assets/img/richard-laag.png'>",
 		"choices": {
 			"a": {
 				"label": "Onderzoeken & analyseren",
@@ -93,7 +93,7 @@ window.cards = [
 	},{
 		"id": 5,
 		"description": "<em>Mark Zuckerberg vraagt:</em><br>'Aan welke eigenschap wil je dat mensen jouw herkennen?'",
-		"image": "<img src='assets/img/mark.png'>",
+		"image": "<img src='assets/img/mark-laag.png'>",
 		"choices": {
 			"a": {
 				"label": "Eerlijkheid & integriteit",
@@ -115,7 +115,7 @@ window.cards = [
 	},{
 		"id": 6,
 		"description": "<em>Jef Bezos vraagt:</em><br>'Welke optie kies je als antwoord op een belangrijke vraag?'",
-		"image": "<img src='assets/img/jef.png'>",
+		"image": "<img src='assets/img/jef-laag.png'>",
 		"choices": {
 			"a": {
 				"label": "De optie die het beste aanvoelt",
@@ -137,7 +137,7 @@ window.cards = [
 	},{
 		"id": 7,
 		"description": "<em>Anita Roddick vraagt:</em><br>'Wat is het doel van jouw onderneming?'",
-		"image": "<img src='assets/img/anita.png'>",
+		"image": "<img src='assets/img/anita-laag.png'>",
 		"choices": {
 			"a": {
 				"label": "Bijdragen aan de lokale economie",
@@ -159,7 +159,7 @@ window.cards = [
 	},{
 		"id": 8,
 		"description": "<em>Peter Thiel vraagt:</em><br>'Met welk bericht wil je dat jouw onderneming in de media komt?'",
-		"image": "<img src='assets/img/peter.png'>",
+		"image": "<img src='assets/img/peter-laag.png'>",
 		"choices": {
 			"a": {
 				"label": "Starter van de revolutie!",
@@ -181,7 +181,7 @@ window.cards = [
 	},{
 		"id": 9,
 		"description": "<em>Richard Branson vraagt:</em><br>'Waar wil je je startup beginnen?'",
-		"image": "<img src='assets/img/richard.png'>",
+		"image": "<img src='assets/img/richard-laag.png'>",
 		"choices": {
 			"a": {
 				"label": "In de garage",
@@ -203,7 +203,7 @@ window.cards = [
 	},{
 		"id": 10,
 		"description": "<em>Mark Zuckerberg vraagt:</em><br>'Wat is jouw idee voor een business strategie?'",
-		"image": "<img src='assets/img/mark.png'>",
+		"image": "<img src='assets/img/mark-laag.png'>",
 		"choices": {
 			"a": {
 				"label": "Het huidige systeem vernieuwen",
@@ -243,7 +243,7 @@ window.cards = [
 	"character": "geldwolf",
 	"startup": "Type startup: The Trump Organization"
 	},{"id": 16,
-	"description": "Je geeft om wat er om je heen gebeurt op het vlak van milieu en gezondheid. Jij wil met jouw onderneming onze planeet een betere plek maken voor iedereen.",
+	"description": "Elke stap die jij zet maakt deel uit van het grote plan. Niemand kan iets veranderen aan jouw visie voor de toekomst.",
 	"character": "visionair",
 	"startup": "Type startup: Tesla"
 	}
