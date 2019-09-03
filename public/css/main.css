@@ -30,8 +30,8 @@ h3{
   font-size:1.1em;
   font-weight: 600;
 }
-h4{
-  font-size:0.7em;
+.grijs{
+  font-size:0.8em;
   color:grey;
 }
 .welcome strong{
@@ -261,6 +261,7 @@ input[type=submit] {
   font-weight: bolder;
   height:0px;
   padding-bottom:100px;
+  text-align:center;
 }
 
 .button{
