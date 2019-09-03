@@ -30,7 +30,10 @@ h3{
   font-size:1.1em;
   font-weight: 600;
 }
-
+h4{
+  font-size:0.7em;
+  color:grey;
+}
 .welcome strong{
   font-family: 'Bitter', serif;
   text-transform: uppercase;

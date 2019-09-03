@@ -1,7 +1,7 @@
 window.cards = [
 	{
 		"id": 1,
-		"description": "<em>Jef Bezos vraagt:</em><br>'Waarom wil je een startup beginnen?'",
+		"description": "<em>vraag 1/10: Jef Bezos vraagt:</em><br>'Waarom wil je een startup beginnen?'",
 		"image": "<img src='assets/img/jef-laag.png'>",
 		"choices": {
 			"a": {
@@ -25,7 +25,7 @@ window.cards = [
 		}
 	},{
 		"id": 2,
-		"description": "<em>Anita Roddick vraagt:</em><br>'Waar bewaar jij jouw business-ideëen?'",
+		"description": "<em>vraag 2/10: Anita Roddick vraagt:</em><br>'Waar bewaar jij jouw business-ideëen?'",
 		"image": "<img src='assets/img/anita-laag.png'>",
 		"choices": {
 			"a": {
@@ -48,7 +48,7 @@ window.cards = [
 	}
 	},{
 		"id": 3,
-		"description": "<em>Peter Thiel vraagt:</em><br>'Succes meet jij aan de hand van?'",
+		"description": "<em>vraag 3/10: Peter Thiel vraagt:</em><br>'Succes meet jij aan de hand van?'",
 		"image": "<img src='assets/img/peter-laag.png'>",
 		"choices": {
 			"a": {
@@ -65,12 +65,12 @@ window.cards = [
 		},
 		"d": {
 			"label": "Beter zijn dan anderen",
-			"values": "Analist"
+			"values": "analist"
 		}
 	}
 	},{
 		"id": 4,
-		"description":"<em>Richard Branson vraagt:</em><br>'Waar ben jij het beste in?'",
+		"description":"<em>vraag 4/10: Richard Branson vraagt:</em><br>'Waar ben jij het beste in?'",
 		"image": "<img src='assets/img/richard-laag.png'>",
 		"choices": {
 			"a": {
@@ -92,7 +92,7 @@ window.cards = [
 	}
 	},{
 		"id": 5,
-		"description": "<em>Mark Zuckerberg vraagt:</em><br>'Aan welke eigenschap wil je dat mensen jouw herkennen?'",
+		"description": "<em>vraag 5/10: Mark Zuckerberg vraagt:</em><br>'Aan welke eigenschap wil je dat mensen jouw herkennen?'",
 		"image": "<img src='assets/img/mark-laag.png'>",
 		"choices": {
 			"a": {
@@ -114,7 +114,7 @@ window.cards = [
 	}
 	},{
 		"id": 6,
-		"description": "<em>Jef Bezos vraagt:</em><br>'Welke optie kies je als antwoord op een belangrijke vraag?'",
+		"description": "<em>vraag 6/10: Jef Bezos vraagt:</em><br>'Welke optie kies je als antwoord op een belangrijke vraag?'",
 		"image": "<img src='assets/img/jef-laag.png'>",
 		"choices": {
 			"a": {
@@ -130,13 +130,13 @@ window.cards = [
 				"values":"geldwolf"
 			},
 			"d": {
-				"label": "De optie die het logischte is",
+				"label": "De meest logische optie",
 				"values": "analist"
 			}
 		}
 	},{
 		"id": 7,
-		"description": "<em>Anita Roddick vraagt:</em><br>'Wat is het doel van jouw onderneming?'",
+		"description": "<em>vraag 7/10: Anita Roddick vraagt:</em><br>'Wat is het doel van jouw onderneming?'",
 		"image": "<img src='assets/img/anita-laag.png'>",
 		"choices": {
 			"a": {
@@ -158,7 +158,7 @@ window.cards = [
 		}
 	},{
 		"id": 8,
-		"description": "<em>Peter Thiel vraagt:</em><br>'Met welk bericht wil je dat jouw onderneming in de media komt?'",
+		"description": "<em>vraag 8/10: Peter Thiel vraagt:</em><br>'Met welk bericht wil je dat jouw onderneming in de media komt?'",
 		"image": "<img src='assets/img/peter-laag.png'>",
 		"choices": {
 			"a": {
@@ -180,7 +180,7 @@ window.cards = [
 		}
 	},{
 		"id": 9,
-		"description": "<em>Richard Branson vraagt:</em><br>'Waar wil je je startup beginnen?'",
+		"description": "<em>vraag 9/10: Richard Branson vraagt:</em><br>'Waar wil je je startup beginnen?'",
 		"image": "<img src='assets/img/richard-laag.png'>",
 		"choices": {
 			"a": {
@@ -202,7 +202,7 @@ window.cards = [
 		}
 	},{
 		"id": 10,
-		"description": "<em>Mark Zuckerberg vraagt:</em><br>'Wat is jouw idee voor een business strategie?'",
+		"description": "<em>vraag 10/10: Mark Zuckerberg vraagt:</em><br>'Wat is jouw idee voor een business strategie?'",
 		"image": "<img src='assets/img/mark-laag.png'>",
 		"choices": {
 			"a": {
