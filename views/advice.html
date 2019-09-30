@@ -1,95 +1,93 @@
 <% include master/header.html %>
-        <div class="gameboy-advice">
-            <div class="nav">
-                <ul>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/info">Info</a></li>
-                    <li><a href="/calculator">De test</a></li>
-                </ul>
-                
-            </div>
-            <div class="advice-grid">
-                    <div id="personage-advice-mobile" class="mobile">
-                            <img class="mobile" src="assets/img/wereldverbeteraar.png">
-                   </div>
-                <div class="advice-item spaghetti">
-               
-                            <h1 id="score">Je bent een undefined ondernemer!</h1>
-                            <h3 id="startup">Type startup: 404 undefined</h3>
-                            <p id="description">Oops, er ging iets fout. Jouw type ondernemer kennen we nog niet.</p>
-                        </div>
-                        <div class="advice-item">
-                                <div id="personage-advice" class="not-mobile">
-                                    <img src="assets/img/wereldverbeteraar.png">
-                                </div>
-                        </div>
-                    
-            </div>
-            
+    <div class="gameboy-advice">
+        <div class="nav">
+            <ul>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/info">Info</a></li>
+                <li><a href="/calculator">De test</a></li>
+            </ul>
 
         </div>
-        <script src="data.js"></script>
-<script>
-    // Locale storage functies declareren.
-const get = (f) => {
-    return localStorage.getItem(f);
-    return false;
-};
+        <div class="advice-grid">
+            <div id="personage-advice-mobile" class="mobile">
+                <img class="mobile" src="assets/img/wereldverbeteraar.png">
+            </div>
+            <div class="advice-item spaghetti">
 
-let wereldverbeteraar = get('wereldverbeteraar') || false;
-let visionair = get('visionair') || false;
-let opportunist = get('opportunist') || false;
-let geldwolf = get('geldwolf') || false;
-let analist = get('analist') || false;
-let revolutionair = get('revolutionair') || false;
+                <h1 id="score">Je bent een undefined ondernemer!</h1>
+                <h3 id="startup">Type startup: 404 undefined</h3>
+                <p id="description">Oops, er ging iets fout. Jouw type ondernemer kennen we nog niet.</p>
+            </div>
+            <div class="advice-item">
+                <div id="personage-advice" class="not-mobile">
+                    <img src="assets/img/wereldverbeteraar.png">
+                </div>
+            </div>
 
-let ondernemersScores = [wereldverbeteraar,visionair,opportunist,geldwolf,revolutionair,analist];
-let ondernemersTypes = ['wereldverbeteraar','visionair','opportunist','geldwolf','revolutionair','analist'];
-let highestScore = ondernemersScores.findIndex(isLargeNumber);
+        </div>
 
-function isLargeNumber(element) {
-  return element > 2;
-}
-// advies aanpassen aan het resultaat.
-    document.getElementById('score').innerHTML = 'Je bent een ' + ondernemersTypes[highestScore] + '!';
+    </div>
+    <script src="data.js"></script>
+    <script>
+        // Locale storage functies declareren.
+        const get = (f) => {
+            return localStorage.getItem(f);
+            return false;
+        };
 
-                if (ondernemersTypes[highestScore] == "wereldverbeteraar") {
-                    document.getElementById('startup').innerHTML = window.cards[10].startup;
-                    document.getElementById('description').innerHTML = window.cards[10].description;
-                    document.getElementById('personage-advice').innerHTML = '<img src="assets/img/wereldverbeteraar.png">';
-                    document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/wereldverbeteraar.png">';
+        let wereldverbeteraar = get('wereldverbeteraar') || false;
+        let visionair = get('visionair') || false;
+        let opportunist = get('opportunist') || false;
+        let geldwolf = get('geldwolf') || false;
+        let analist = get('analist') || false;
+        let revolutionair = get('revolutionair') || false;
 
-                } else if (ondernemersTypes[highestScore] == "geldwolf"){
-                    document.getElementById('startup').innerHTML = window.cards[14].startup;
-                    document.getElementById('description').innerHTML = window.cards[14].description;
-                    document.getElementById('personage-advice').innerHTML = '<img src="assets/img/geldwolf.png">';
-                    document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/geldwolf.png">';
+        let ondernemersScores = [wereldverbeteraar, visionair, opportunist, geldwolf, revolutionair, analist];
+        let ondernemersTypes = ['wereldverbeteraar', 'visionair', 'opportunist', 'geldwolf', 'revolutionair', 'analist'];
+        let highestScore = ondernemersScores.findIndex(isLargeNumber);
 
-                } else if (ondernemersTypes[highestScore] == "opportunist"){
-                    document.getElementById('startup').innerHTML = window.cards[13].startup;
-                    document.getElementById('description').innerHTML = window.cards[13].description;
-                    document.getElementById('personage-advice').innerHTML = '<img src="assets/img/opportunist.png">';
-                    document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/opportunist.png">';
-                    
-                } else if (ondernemersTypes[highestScore] == "visionair"){
-                    document.getElementById('startup').innerHTML = window.cards[15].startup;
-                    document.getElementById('description').innerHTML = window.cards[15].description;
-                    document.getElementById('personage-advice').innerHTML = '<img src="assets/img/visionair.png">';
-                    document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/visionair.png">';
+        function isLargeNumber(element) {
+            return element > 2;
+        }
+        // advies aanpassen aan het resultaat.
+        document.getElementById('score').innerHTML = 'Je bent een ' + ondernemersTypes[highestScore] + '!';
 
-                } else if (ondernemersTypes[highestScore] == "revolutionair"){
-                    document.getElementById('startup').innerHTML = window.cards[11].startup;
-                    document.getElementById('description').innerHTML = window.cards[11].description;
-                    document.getElementById('personage-advice').innerHTML = '<img src="assets/img/revolutionair.png">';
-                    document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/revolutionair.png">';
+        if (ondernemersTypes[highestScore] == "wereldverbeteraar") {
+            document.getElementById('startup').innerHTML = window.cards[10].startup;
+            document.getElementById('description').innerHTML = window.cards[10].description;
+            document.getElementById('personage-advice').innerHTML = '<img src="assets/img/wereldverbeteraar.png">';
+            document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/wereldverbeteraar.png">';
 
-                } else if (ondernemersTypes[highestScore] == "analist"){
-                    document.getElementById('startup').innerHTML = window.cards[12].startup;
-                    document.getElementById('description').innerHTML = window.cards[12].description;
-                    document.getElementById('personage-advice').innerHTML = '<img src="assets/img/analist.png">';
-                    document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/analist.png">';
+        } else if (ondernemersTypes[highestScore] == "geldwolf") {
+            document.getElementById('startup').innerHTML = window.cards[14].startup;
+            document.getElementById('description').innerHTML = window.cards[14].description;
+            document.getElementById('personage-advice').innerHTML = '<img src="assets/img/geldwolf.png">';
+            document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/geldwolf.png">';
 
-                }
+        } else if (ondernemersTypes[highestScore] == "opportunist") {
+            document.getElementById('startup').innerHTML = window.cards[13].startup;
+            document.getElementById('description').innerHTML = window.cards[13].description;
+            document.getElementById('personage-advice').innerHTML = '<img src="assets/img/opportunist.png">';
+            document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/opportunist.png">';
 
-</script>
-<% include master/footer.html %>
+        } else if (ondernemersTypes[highestScore] == "visionair") {
+            document.getElementById('startup').innerHTML = window.cards[15].startup;
+            document.getElementById('description').innerHTML = window.cards[15].description;
+            document.getElementById('personage-advice').innerHTML = '<img src="assets/img/visionair.png">';
+            document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/visionair.png">';
+
+        } else if (ondernemersTypes[highestScore] == "revolutionair") {
+            document.getElementById('startup').innerHTML = window.cards[11].startup;
+            document.getElementById('description').innerHTML = window.cards[11].description;
+            document.getElementById('personage-advice').innerHTML = '<img src="assets/img/revolutionair.png">';
+            document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/revolutionair.png">';
+
+        } else if (ondernemersTypes[highestScore] == "analist") {
+            document.getElementById('startup').innerHTML = window.cards[12].startup;
+            document.getElementById('description').innerHTML = window.cards[12].description;
+            document.getElementById('personage-advice').innerHTML = '<img src="assets/img/analist.png">';
+            document.getElementById('personage-advice-mobile').innerHTML = '<img src="assets/img/analist.png">';
+
+        }
+    </script>
+    <% include master/footer.html %>
